@@ -151,7 +151,7 @@
   {
     "id": "death",
     "name": "Смерть",
-    "icon": "./icons/bosses/death-portrait-26a7786c.png",
+    "icon": "./icons/bosses/death-portrait-6771f4fc.png",
     "itemIds": [
       "item-450",
       "item-477"
