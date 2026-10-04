@@ -8,6 +8,7 @@
 !/package-lock.json
 !/vite.config.js
 !/README.md
+!/LICENSE
 !/src/
 !/src/**
 /src/style.css
