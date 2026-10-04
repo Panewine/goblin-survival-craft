@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
 
-const props = defineProps({ levels: { type: Array, required: true } })
+const props = defineProps({ levels: { type: Array, required: true }, initialSelection: Object })
 const emit = defineEmits(['change'])
 const mode = ref('range'), low = ref(0), high = ref(0), exact = ref(0)
 const last = computed(() => props.levels.length - 1)
@@ -12,7 +12,13 @@ function publish() {
     ? { mode: 'exact', level: props.levels[exact.value] }
     : { mode: 'range', min: props.levels[low.value], max: props.levels[high.value], all: low.value === 0 && high.value === last.value })
 }
-watch(() => props.levels, () => { low.value = 0; high.value = last.value; exact.value = 0; publish() }, { immediate: true })
+function resetLevels() { low.value = 0; high.value = last.value; exact.value = 0 }
+resetLevels()
+const initial = props.initialSelection
+if (initial?.mode === 'exact' && props.levels.includes(initial.level)) { mode.value = 'exact'; exact.value = props.levels.indexOf(initial.level) }
+else if (initial?.mode === 'range' && props.levels.includes(initial.min) && props.levels.includes(initial.max)) { low.value = props.levels.indexOf(initial.min); high.value = props.levels.indexOf(initial.max) }
+publish()
+watch(() => props.levels, () => { resetLevels(); publish() })
 function setLow(event) { low.value = Math.min(Number(event.target.value), high.value); event.target.value = low.value; publish() }
 function setHigh(event) { high.value = Math.max(Number(event.target.value), low.value); event.target.value = high.value; publish() }
 function toggleMode() {

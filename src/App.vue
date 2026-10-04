@@ -10,23 +10,26 @@ import vFitCardTitle from './fit-card-title'
 import LevelFilter from './LevelFilter.vue'
 
 const publicAssetBase = import.meta.env.BASE_URL
-const category = ref('all'), mobileNav = ref(false)
+function readPosition() { try { const value = JSON.parse(localStorage.getItem('goblin-position') || '{}'); return value && typeof value === 'object' ? value : {} } catch { return {} } }
+const savedPosition = readPosition()
+const category = ref(categories.some(entry => entry.id === savedPosition.category) ? savedPosition.category : 'all'), mobileNav = ref(false)
 const compactViewport = window.matchMedia('(max-width: 960px)')
 const isCompact = ref(compactViewport.matches)
 const recipePane = ref(null)
 function updateCompactViewport(event) { isCompact.value = event.matches }
-const selectedGroup = ref(null)
-const greatForgeTab = ref('boss')
-const selectedCraftBoss = ref(null)
+const initialGroups = category.value === 'sets' ? bosses : category.value === 'craft' ? forges : category.value === 'kv' ? classes : []
+const selectedGroup = ref(initialGroups.find(entry => entry.id === savedPosition.group) || null)
+const greatForgeTab = ref(greatForgeTabs.some(tab => tab.id === savedPosition.tab) ? savedPosition.tab : 'boss')
+const selectedCraftBoss = ref(craftBosses.some(boss => boss.id === savedPosition.boss) ? savedPosition.boss : null)
 const isGreatForge = computed(() => category.value === 'craft' && selectedGroup.value?.id === 'great')
 const showSearch = computed(() => category.value !== 'sets' && category.value !== 'kv' && !(isGreatForge.value && greatForgeTab.value === 'arts'))
-const query = ref('')
+const query = ref(typeof savedPosition.query === 'string' ? savedPosition.query : '')
 const directCatalog = computed(() => ['all', 'favorites', 'food'].includes(category.value))
 const groups = computed(() => category.value === 'sets' ? bosses : category.value === 'craft' ? forges : classes)
 function readClassView() { try { return localStorage.getItem('goblin-view') === 'list' ? 'list' : 'grid' } catch { return 'grid' } }
 const classView = ref(readClassView())
 watch(classView, value => { try { localStorage.setItem('goblin-view', value) } catch {} })
-const selectedItem = ref(null)
+const selectedItem = ref(items.find(item => !item.hidden && item.id === savedPosition.item) || null)
 const recipeSources = computed(() => recipeSourcesFor(selectedItem.value))
 const recipeIngredients = computed(() => selectedItem.value?.ingredients.filter(part => !part.source) || [])
 const byId = new Map(items.filter(item => !item.hidden).map(item => [item.id, item]))
@@ -71,7 +74,7 @@ const bossCraftGroups = computed(() => {
 })
 const activeCraftBoss = computed(() => bossCraftGroups.value.find(boss => boss.id === selectedCraftBoss.value) || bossCraftGroups.value[0])
 const unfilteredItems = computed(() => isGreatForge.value ? greatForgeTab.value === 'boss' ? activeCraftBoss.value?.items || [] : groupItems.value.filter(item => greatForgeCategoryFor(item) === greatForgeTab.value) : groupItems.value)
-const levelSelection = ref(null)
+const levelSelection = ref(['range', 'exact'].includes(savedPosition.level?.mode) ? savedPosition.level : null)
 const filterRevision = ref(0)
 const levelSteps = computed(() => itemLevels(unfilteredItems.value))
 const levelScope = computed(() => `${category.value}:${selectedGroup.value?.id || ''}:${greatForgeTab.value}:${activeCraftBoss.value?.id || ''}`)
@@ -92,8 +95,25 @@ const visibleCount = items.filter(item => !item.hidden).length
 const sectionDescription = computed(() => ({ all: 'Оружие, артефакты и всё, что пригодится в выживании.', kv: 'Выбери своего гоблина и найди подходящую экипировку.', sets: 'Трофеи боссов и комплекты для следующего сражения.', craft: 'Рецепты по кузницам — от первых деталей до легендарных предметов.', food: 'Еда и припасы для твоего следующего приключения.', favorites: 'Нужные рецепты всегда под рукой.' }[category.value]))
 function chooseCategory(id) { category.value = id; mobileNav.value = false; selectedGroup.value = null; query.value = ''; closeRecipe() }
 function onKey(event) { if (event.key === 'Escape') { mobileNav.value = false; closeRecipe() } }
-onMounted(() => { window.addEventListener('keydown', onKey); compactViewport.addEventListener('change', updateCompactViewport) })
-onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewport.removeEventListener('change', updateCompactViewport) })
+let restoringPosition = true
+function savePosition() {
+  if (restoringPosition) return
+  try { localStorage.setItem('goblin-position', JSON.stringify({ category: category.value, group: selectedGroup.value?.id, tab: greatForgeTab.value, boss: selectedCraftBoss.value, item: selectedItem.value?.id, query: query.value, level: levelSelection.value, scroll: window.scrollY, recipeScroll: recipePane.value?.scrollTop || 0 })) } catch {}
+}
+watch([category, selectedGroup, greatForgeTab, selectedCraftBoss, selectedItem, query, levelSelection], savePosition, { flush: 'post' })
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+onMounted(() => {
+  window.addEventListener('keydown', onKey)
+  window.addEventListener('pagehide', savePosition)
+  compactViewport.addEventListener('change', updateCompactViewport)
+  requestAnimationFrame(() => {
+    if (isCompact.value && selectedItem.value && recipePane.value) recipePane.value.showModal()
+    window.scrollTo({ top: Number(savedPosition.scroll) || 0, behavior: 'instant' })
+    if (recipePane.value) recipePane.value.scrollTop = Number(savedPosition.recipeScroll) || 0
+    restoringPosition = false
+  })
+})
+onUnmounted(() => { window.removeEventListener('pagehide', savePosition); window.removeEventListener('keydown', onKey); compactViewport.removeEventListener('change', updateCompactViewport) })
 </script>
 
 <template>
@@ -118,7 +138,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
           <span class="intro-tag"><Icon name="hammer" /> Сначала детали. Потом взрывы.</span>
         </section>
         <section data-od-id="catalog" class="catalog" :aria-labelledby="selectedGroup ? 'class-title' : 'catalog-title'" style="min-height: 320px">
-          <div v-if="!selectedGroup" class="catalog-heading"><div><h2 id="catalog-title">{{ heading }}</h2><p class="catalog-subtitle">{{ sectionDescription }}</p></div><LevelFilter v-if="directCatalog && levelSteps.length" :key="`${levelScope}:${filterRevision}`" :levels="levelSteps" @change="levelSelection = $event" /></div>
+          <div v-if="!selectedGroup" class="catalog-heading"><div><h2 id="catalog-title">{{ heading }}</h2><p class="catalog-subtitle">{{ sectionDescription }}</p></div><LevelFilter v-if="directCatalog && levelSteps.length" :key="`${levelScope}:${filterRevision}`" :levels="levelSteps" :initial-selection="levelSelection" @change="levelSelection = $event" /></div>
           <template v-if="directCatalog || category === 'kv' || category === 'sets' || category === 'craft'">
             <div v-if="!selectedGroup && !directCatalog" class="class-grid" :class="{ 'boss-portraits': category === 'sets' }" :aria-label="category === 'sets' ? 'Боссы' : category === 'craft' ? 'Кузницы' : 'Классы персонажей'">
               <button :data-od-id="`group-${entry.id}`" v-for="entry in groups" :key="entry.id" class="class-portrait" @click="selectedGroup = entry">
@@ -131,7 +151,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
               <div v-if="selectedGroup" class="class-items-heading">
                 <img :src="selectedGroup.icon" alt="" />
                 <h3 id="class-title" data-od-id="group-title">{{ selectedGroup.name }} <span class="class-count">{{ unfilteredItems.length }}</span></h3>
-                <LevelFilter v-if="levelSteps.length" :key="`${levelScope}:${filterRevision}`" :levels="levelSteps" @change="levelSelection = $event" />
+                <LevelFilter v-if="levelSteps.length" :key="`${levelScope}:${filterRevision}`" :levels="levelSteps" :initial-selection="levelSelection" @change="levelSelection = $event" />
               </div>
               <nav data-od-id="group-switcher" v-if="selectedGroup" class="class-switcher" :class="{ 'boss-switcher': category === 'sets' }" :aria-label="category === 'sets' ? 'Выбор босса' : category === 'craft' ? 'Выбор кузницы' : 'Выбор класса'"><button :data-od-id="`group-${entry.id}`" v-for="entry in groups" :key="entry.id" :class="{ active: selectedGroup.id === entry.id }" :aria-label="entry.name" :aria-pressed="selectedGroup.id === entry.id" :title="entry.name" @click="selectedGroup = entry"><img :src="entry.icon" alt="" /></button></nav>
               <nav data-od-id="great-forge-tabs" v-if="isGreatForge" class="forge-tabs" aria-label="Разделы Великой кузницы"><button v-for="tab in greatForgeTabs" :key="tab.id" :class="{ active: greatForgeTab === tab.id }" :aria-pressed="greatForgeTab === tab.id" @click="greatForgeTab = tab.id">{{ tab.name }} <span>{{ greatForgeCounts[tab.id] }}</span></button></nav>
