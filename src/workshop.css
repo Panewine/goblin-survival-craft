@@ -200,8 +200,8 @@ main { min-width: 0; padding: 28px 28px 0; }
 .class-portrait { position: relative; min-width: 0; padding: 24px 12px 20px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); box-shadow: inset 0 0 0 4px var(--bg); }
 .class-portrait-frame { display: block; width: 114px; height: 114px; margin: 0 auto 18px; padding: 4px; border: 2px solid var(--brass-muted); background: var(--bg); box-shadow: 0 6px 12px var(--shadow); }
 .class-portrait-frame img { width: 100%; height: 100%; object-fit: cover; }
-img[src*="/bosses/"][src*="-portrait-"] { outline: 3px ridge #dedace; outline-offset: -4px; }
-.class-portrait-frame img[src*="-portrait-"] { outline-width: 5px; outline-offset: -6px; }
+img[src*="/bosses/"][src*="-portrait-"] { border: 3px ridge #dedace; }
+.class-portrait-frame img[src*="-portrait-"] { border-width: 5px; }
 .class-portrait .class-name { color: var(--brass); font: 400 18px/1.4 var(--font-display); overflow-wrap: anywhere; }
 .boss-portraits img[src$=".svg"] { object-fit: contain; padding: 8px; }
 .class-switcher { display: flex; gap: 10px; padding: 6px 4px 10px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--brass-muted) var(--bg); }
