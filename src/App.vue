@@ -18,7 +18,9 @@ const isGreatForge = computed(() => category.value === 'craft' && selectedGroup.
 const query = ref('')
 const directCatalog = computed(() => ['all', 'favorites', 'food'].includes(category.value))
 const groups = computed(() => category.value === 'sets' ? bosses : category.value === 'craft' ? forges : classes)
-const classView = ref('grid')
+function readClassView() { try { return localStorage.getItem('goblin-view') === 'list' ? 'list' : 'grid' } catch { return 'grid' } }
+const classView = ref(readClassView())
+watch(classView, value => { try { localStorage.setItem('goblin-view', value) } catch {} })
 const selectedItem = ref(null)
 const recipeSources = computed(() => recipeSourcesFor(selectedItem.value))
 const recipeIngredients = computed(() => selectedItem.value?.ingredients.filter(part => !part.source) || [])
