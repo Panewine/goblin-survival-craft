@@ -1,7 +1,17 @@
 import { legacyForgeItemIds, jewelItemIds } from './data/legacy-craft-groups.js'
-import bossDropIds, { bossByDropId } from './data/boss-drop-ids.js'
+import { bossByDropId } from './data/boss-drop-ids.js'
+import bosses from './data/bosses.json' with { type: 'json' }
+import items from './data/items.json' with { type: 'json' }
 
-const bossDrops = new Set(bossDropIds)
+const catalogById = new Map(items.map(item => [item.id, item]))
+export const craftBosses = [...bosses, { id: 'dragon', name: 'Дракон', icon: './icons/forges/dragon.png' }]
+const bossOrder = new Map(craftBosses.map((boss, index) => [boss.id, index]))
+const bossIngredientAliases = {
+  'любаячастьдрессировщика': 'handler',
+  'любаячастьсетастраха': 'fear',
+  'любаячастьсетаалчности': 'greed',
+  'порванаясетьдрессировщика': 'handler',
+}
 const jewels = new Set(jewelItemIds)
 export const greatForgeTabs = [
   { id: 'boss', name: 'Крафт с босса' },
@@ -9,11 +19,28 @@ export const greatForgeTabs = [
 ]
 export function greatForgeCategoryFor(item) {
   if (/(?:^|\s)сет(?:\s|$)/i.test(item.name)) return 'sets'
-  if (item.ingredients.some(part => bossDrops.has(part.itemId) || /дроп с босса/i.test(part.name))) return 'boss'
-  return item.classes.length ? 'kv' : 'arts'
+  if (item.classes.length) return 'kv'
+  if (craftBossIdsFor(item).length) return 'boss'
+  return 'arts'
 }
-export function craftBossIdsFor(item) {
-  return [...new Set(item.ingredients.map(part => bossByDropId[part.itemId]).filter(Boolean))]
+export function craftBossIdsFor(item, byId = catalogById) {
+  const visited = new Set()
+  let latestBoss = null
+  function includeBoss(id) {
+    if (id && (latestBoss === null || bossOrder.get(id) > bossOrder.get(latestBoss))) latestBoss = id
+  }
+  function visit(current) {
+    if (!current || visited.has(current)) return
+    visited.add(current)
+    includeBoss(bossByDropId[current.id])
+    for (const part of current.ingredients || []) {
+      includeBoss(bossByDropId[part.itemId])
+      if (!part.itemId) includeBoss(bossIngredientAliases[normalize(part.name)])
+      visit(byId.get(part.itemId))
+    }
+  }
+  visit(item)
+  return latestBoss ? [latestBoss] : []
 }
 
 export const categories = [

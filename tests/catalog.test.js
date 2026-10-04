@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
-import { classItemsFor, collectMaterials, craftBossIdsFor, filterItems, forgeFor, forges, greatForgeCategoryFor, greatForgeTabs, itemLevels, matchesLevel, normalize, recipeSourcesFor } from '../src/catalog.js'
+import { classItemsFor, collectMaterials, craftBosses, craftBossIdsFor, filterItems, forgeFor, forges, greatForgeCategoryFor, greatForgeTabs, itemLevels, matchesLevel, normalize, recipeSourcesFor } from '../src/catalog.js'
 
 const items = JSON.parse(readFileSync(new URL('../src/data/items.json', import.meta.url), 'utf8'))
 const byId = new Map(items.map(item => [item.id, item]))
@@ -28,7 +28,7 @@ test('Jewelry is duplicated by existing IDs and excludes boss drops and their cr
   for (const name of ['Перстень Алчности', 'Рубиновый адский перстень', 'Кольцо Истинной Смерти', 'Амулет Смерти']) assert.ok(!jewels.itemIds.includes(items.find(item => item.name === name).id))
 })
 
-test('Great Forge partitions sets, direct boss crafts, class gear and remaining artifacts', () => {
+test('Great Forge partitions sets, nested boss crafts, class gear and remaining artifacts', () => {
   const find = name => items.find(item => item.name === name)
   assert.equal(greatForgeCategoryFor(find('Сет Рабовладельца')), 'sets')
   assert.equal(greatForgeCategoryFor(find('Амулет продажности')), 'boss')
@@ -48,11 +48,42 @@ test('Great Forge excludes class gear and sets; jewelry is kept only in its own 
   assert.ok(items.some(item => item.name === 'Сет Рабовладельца' && !item.hidden))
 })
 
-test('Every Great Forge boss craft has a boss and shared trophies retain both bosses', () => {
+test('Every Great Forge boss craft belongs only to the latest required boss', () => {
   const bossCrafts = items.filter(item => forgeFor(item) === 'great' && greatForgeCategoryFor(item) === 'boss')
-  assert.ok(bossCrafts.every(item => craftBossIdsFor(item).length > 0))
+  assert.ok(bossCrafts.every(item => craftBossIdsFor(item).length === 1))
   assert.deepEqual(craftBossIdsFor(items.find(item => item.name === 'Амулет продажности')), ['greed'])
-  assert.deepEqual(craftBossIdsFor({ ingredients: [{ itemId: 'item-100' }, { itemId: 'item-128' }, { itemId: 'item-100' }] }), ['slavemaster', 'guardian'])
+  assert.deepEqual(craftBossIdsFor({ ingredients: [{ itemId: 'item-100' }, { itemId: 'item-128' }, { itemId: 'item-100' }] }), ['guardian'])
+})
+
+test('Boss crafts follow encounter order and include repaired and nested trophies', () => {
+  assert.deepEqual(craftBosses.slice(0, 13).map(boss => boss.id), ['arachnid', 'slavemaster', 'guardian', 'excavator', 'lust', 'bombs', 'greed', 'hazul', 'fear', 'handler', 'envy', 'shizzl', 'death'])
+  const expected = {
+    'Пылающий восполнитель': 'bombs',
+    'Деталь Сапогов Зоофила': 'hazul',
+    'Сапоги Зоофила': 'handler',
+    'Арахнидский камень': 'arachnid',
+    'Шторм': 'handler',
+    'Украденный свет': 'envy',
+    'Дух проклятого Зверя': 'envy',
+    'Шлем Воеводы': 'shizzl',
+    'Бесконечная микстура интеллекта': 'shizzl',
+  }
+  for (const [name, boss] of Object.entries(expected)) {
+    const item = items.find(item => item.name === name)
+    assert.deepEqual(craftBossIdsFor(item), [boss], name)
+    assert.equal(greatForgeCategoryFor(item), 'boss', name)
+  }
+  for (const name of ['Око демона', 'Мощь', 'Набор алмазных отмычек']) {
+    assert.deepEqual(craftBossIdsFor(items.find(item => item.name === name)), [], name)
+    assert.equal(greatForgeCategoryFor(items.find(item => item.name === name)), 'arts', name)
+  }
+})
+
+test('Boss classification follows nested recipes safely through cycles and unknown parts', () => {
+  const a = { id: 'a', ingredients: [{ itemId: 'b' }, { itemId: 'item-100' }] }
+  const b = { id: 'b', ingredients: [{ itemId: 'a' }, { itemId: 'item-254' }, { name: 'Неизвестный материал' }] }
+  assert.deepEqual(craftBossIdsFor(a, new Map([['a', a], ['b', b]])), ['hazul'])
+  assert.deepEqual(craftBossIdsFor({ ingredients: [{ name: 'Любая часть Дрессировщика' }, { name: 'Любая часть сета Страха' }] }), ['handler'])
 })
 
 test('Boss groups cover every set once in encounter order with local icons', () => {

@@ -57,6 +57,15 @@ export default [
 ]
 
 export const bossByDropId = {
+  // Restored trophies: their broken originals are absent from the CSV catalog.
+  "item-216": "bombs",
+  "item-217": "bombs",
+  "item-218": "bombs",
+  "item-219": "bombs",
+  "item-220": "bombs",
+  "item-253": "hazul",
+  "item-254": "hazul",
+  "item-255": "hazul",
   "item-85": "arachnid",
   "item-86": "arachnid",
   "item-87": "arachnid",

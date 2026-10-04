@@ -4,7 +4,7 @@ import mapInfo from './data/map-info.json'
 import classes from './data/classes.json'
 import bosses from './data/bosses.json'
 import items from './data/items.json'
-import { categories, classItemsFor, craftBossIdsFor, filterItems, forgeFor, forges, greatForgeCategoryFor, greatForgeTabs, iconFor, itemLevels, matchesLevel, recipeSourcesFor } from './catalog'
+import { categories, classItemsFor, craftBosses, craftBossIdsFor, filterItems, forgeFor, forges, greatForgeCategoryFor, greatForgeTabs, iconFor, itemLevels, matchesLevel, recipeSourcesFor } from './catalog'
 import Icon from './Icon.vue'
 import vFitCardTitle from './fit-card-title'
 import LevelFilter from './LevelFilter.vue'
@@ -29,7 +29,10 @@ function openItem(item) {
 }
 function closeRecipe() { selectedItem.value = null }
 const groupItems = computed(() => directCatalog.value ? filterItems(items, { category: category.value, favorites: favorites.value }) : !selectedGroup.value ? [] : selectedGroup.value.itemIds ? selectedGroup.value.itemIds.map(id => byId.get(id)).filter(Boolean) : category.value === 'craft' ? items.filter(item => forgeFor(item) === selectedGroup.value.id) : classItemsFor(items, selectedGroup.value.name))
-const bossCraftGroups = computed(() => [...bosses, { id: 'dragon', name: 'Дракон', icon: './icons/forges/dragon.png' }].map(boss => ({ ...boss, items: groupItems.value.filter(item => greatForgeCategoryFor(item) === 'boss' && craftBossIdsFor(item).includes(boss.id)) })).filter(boss => boss.items.length))
+const bossCraftGroups = computed(() => {
+  const assignments = groupItems.value.map(item => ({ item, bossId: craftBossIdsFor(item)[0] }))
+  return craftBosses.map(boss => ({ ...boss, items: assignments.filter(entry => entry.bossId === boss.id).map(entry => entry.item) })).filter(boss => boss.items.length)
+})
 const activeCraftBoss = computed(() => bossCraftGroups.value.find(boss => boss.id === selectedCraftBoss.value) || bossCraftGroups.value[0])
 const unfilteredItems = computed(() => isGreatForge.value ? greatForgeTab.value === 'boss' ? activeCraftBoss.value?.items || [] : groupItems.value.filter(item => greatForgeCategoryFor(item) === greatForgeTab.value) : groupItems.value)
 const levelSelection = ref(null)
