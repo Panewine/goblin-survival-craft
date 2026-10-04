@@ -79,14 +79,14 @@
   {
     "id": "greed",
     "name": "Алчность",
-    "icon": "./icons/bosses/greed.png",
+    "icon": "./icons/bosses/greed-portrait-11d6a026.png",
     "itemIds": [
       "item-238",
       "item-294"
     ],
-    "iconSource": "game-user-mapping",
+    "iconSource": "map-model-portrait",
     "mapUnitId": "n01O",
-    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDemoness.dds"
+    "modelPath": "war3mapImported\\Prime Matron.mdx"
   },
   {
     "id": "hazul",
@@ -115,23 +115,26 @@
   {
     "id": "handler",
     "name": "Дрессировщик",
-    "icon": "./icons/bosses/handler.png",
+    "icon": "./icons/bosses/handler-portrait-89eb20f8.png",
     "itemIds": [
       "item-339",
       "item-340"
     ],
-    "iconSource": "game-user-mapping",
+    "iconSource": "map-model-portrait",
     "mapUnitId": "n02J",
-    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMortarTeam.dds"
+    "modelPath": "war3mapImported\\Goblin Juggernaut.mdx"
   },
   {
     "id": "envy",
     "name": "Зависть",
-    "icon": "./icons/bosses/envy.svg",
+    "icon": "./icons/bosses/envy-portrait-e7c34bde.png",
     "itemIds": [
       "item-369",
       "item-370"
-    ]
+    ],
+    "iconSource": "map-model-portrait",
+    "mapUnitId": "n02S",
+    "modelPath": "war3mapImported\\Butcher.mdx"
   },
   {
     "id": "shizzl",
@@ -148,10 +151,13 @@
   {
     "id": "death",
     "name": "Смерть",
-    "icon": "./icons/bosses/death.svg",
+    "icon": "./icons/bosses/death-portrait-26a7786c.png",
     "itemIds": [
       "item-450",
       "item-477"
-    ]
+    ],
+    "iconSource": "map-model-portrait",
+    "mapUnitId": "n036",
+    "modelPath": "war3mapImported\\Amaducias.mdx"
   }
 ]
