@@ -19,6 +19,7 @@ const selectedGroup = ref(null)
 const greatForgeTab = ref('boss')
 const selectedCraftBoss = ref(null)
 const isGreatForge = computed(() => category.value === 'craft' && selectedGroup.value?.id === 'great')
+const showSearch = computed(() => category.value !== 'sets' && category.value !== 'kv' && !(isGreatForge.value && greatForgeTab.value === 'arts'))
 const query = ref('')
 const directCatalog = computed(() => ['all', 'favorites', 'food'].includes(category.value))
 const groups = computed(() => category.value === 'sets' ? bosses : category.value === 'craft' ? forges : classes)
@@ -35,6 +36,23 @@ function openItem(item) {
 }
 function closeRecipe() { selectedItem.value = null }
 function resetRecipeScroll() { if (recipePane.value) recipePane.value.scrollTop = 0 }
+function holdRecipeHeight() {
+  const pane = recipePane.value
+  if (pane && (!isCompact.value || pane.open)) pane.style.height = `${pane.getBoundingClientRect().height}px`
+}
+function resizeRecipePane(content) {
+  const pane = recipePane.value
+  if (!pane || !pane.style.height) return
+  const border = pane.offsetHeight - pane.clientHeight
+  const closeHeight = pane.querySelector('.recipe-close')?.offsetHeight || 0
+  const limit = parseFloat(getComputedStyle(pane).maxHeight)
+  const height = Math.min(content.offsetHeight + closeHeight + border, limit)
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || Math.abs(pane.getBoundingClientRect().height - height) < 1) { pane.style.height = ''; return }
+  pane.style.height = `${height}px`
+}
+function finishRecipeResize(event) {
+  if (event.target === recipePane.value && event.propertyName === 'height') recipePane.value.style.height = ''
+}
 function onRecipeBackdrop(event) {
   if (!isCompact.value || event.target !== event.currentTarget) return
   const bounds = event.currentTarget.getBoundingClientRect()
@@ -118,11 +136,13 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
               <nav data-od-id="group-switcher" v-if="selectedGroup" class="class-switcher" :class="{ 'boss-switcher': category === 'sets' }" :aria-label="category === 'sets' ? 'Выбор босса' : category === 'craft' ? 'Выбор кузницы' : 'Выбор класса'"><button :data-od-id="`group-${entry.id}`" v-for="entry in groups" :key="entry.id" :class="{ active: selectedGroup.id === entry.id }" :aria-label="entry.name" :aria-pressed="selectedGroup.id === entry.id" :title="entry.name" @click="selectedGroup = entry"><img :src="entry.icon" alt="" /></button></nav>
               <nav data-od-id="great-forge-tabs" v-if="isGreatForge" class="forge-tabs" aria-label="Разделы Великой кузницы"><button v-for="tab in greatForgeTabs" :key="tab.id" :class="{ active: greatForgeTab === tab.id }" :aria-pressed="greatForgeTab === tab.id" @click="greatForgeTab = tab.id">{{ tab.name }} <span>{{ greatForgeCounts[tab.id] }}</span></button></nav>
               <nav data-od-id="craft-boss-switcher" v-if="isGreatForge && greatForgeTab === 'boss'" class="class-switcher boss-switcher" aria-label="Боссы для крафта"><button :data-od-id="`craft-boss-${boss.id}`" v-for="boss in bossCraftGroups" :key="boss.id" :class="{ active: activeCraftBoss?.id === boss.id }" :aria-label="boss.name" :title="boss.name" :aria-pressed="activeCraftBoss?.id === boss.id" @click="selectedCraftBoss = boss.id"><img :src="boss.icon" alt="" /></button></nav>
+              <div class="catalog-controls" :class="{ 'without-search': !showSearch }">
               <div class="catalog-tools" data-od-id="catalog-tools">
-                <div v-if="category !== 'sets' && category !== 'kv' && !(isGreatForge && greatForgeTab === 'arts')" class="global-search catalog-search"><Icon name="search" /><input v-model="query" type="search" placeholder="Название, характеристики или ингредиент" :aria-label="selectedGroup ? `Поиск: ${selectedGroup.name}` : 'Поиск предметов'" data-od-id="catalog-search" /><button v-if="query" class="search-clear" aria-label="Очистить поиск" @click="query = ''"><Icon name="close" /></button></div>
+                <div v-if="showSearch" class="global-search catalog-search"><Icon name="search" /><input v-model="query" type="search" placeholder="Название, характеристики или ингредиент" :aria-label="selectedGroup ? `Поиск: ${selectedGroup.name}` : 'Поиск предметов'" data-od-id="catalog-search" /><button v-if="query" class="search-clear" aria-label="Очистить поиск" @click="query = ''"><Icon name="close" /></button></div>
                 <div class="view-switch" role="group" aria-label="Вид предметов"><button :class="{ active: classView === 'grid' }" :aria-pressed="classView === 'grid'" aria-label="Карточки" data-od-id="view-grid" @click="classView = 'grid'"><Icon name="grid" /></button><button :class="{ active: classView === 'list' }" :aria-pressed="classView === 'list'" aria-label="Список" data-od-id="view-list" @click="classView = 'list'"><Icon name="list" /></button></div>
               </div>
               <div class="results-meta"><span aria-live="polite">Предметов: <b>{{ classItems.length }}</b><template v-if="hasFilters"> из {{ unfilteredItems.length }}</template></span><button v-if="hasFilters" class="reset-filters" @click="resetFilters">Сбросить поиск и уровень <Icon name="close" /></button><span v-else>Выбери предмет для просмотра рецепта <Icon name="arrow" /></span></div>
+              </div>
               <div class="class-content" data-od-id="catalog-and-recipe">
               <div class="cards kv-cards" :class="{ compact: classView === 'list' }" :aria-label="selectedGroup ? `Предметы: ${selectedGroup.name}` : heading">
                 <article :data-od-id="`item-${item.id}`" v-for="item in classItems" :key="item.id" class="item-card" :class="[item.category, { selected: selectedItem?.id === item.id }]">
@@ -131,9 +151,9 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
                 </article>
               <div v-if="!classItems.length" class="catalog-empty" data-od-id="catalog-empty"><Icon :name="category === 'favorites' && !hasFilters ? 'star' : 'search'" /><h3>{{ hasFilters ? 'Ничего не нашлось' : category === 'favorites' ? 'Сохрани свои рецепты' : 'Здесь пока нет предметов' }}</h3><p>{{ hasFilters ? 'Измени запрос или расширь диапазон уровней.' : category === 'favorites' ? 'Нажми звезду на карточке — предмет появится здесь.' : 'Для этой группы предметы пока не указаны.' }}</p><button v-if="hasFilters" class="clear-search" @click="resetFilters">Сбросить поиск и уровень <Icon name="close" /></button></div>
               </div>
-              <component :is="isCompact ? 'dialog' : 'aside'" ref="recipePane" data-od-id="recipe-pane" class="recipe-pane" aria-label="Рецепт предмета" tabindex="-1" @click="onRecipeBackdrop" @cancel.prevent="closeRecipe">
+              <component :is="isCompact ? 'dialog' : 'aside'" ref="recipePane" data-od-id="recipe-pane" class="recipe-pane" aria-label="Рецепт предмета" tabindex="-1" @click="onRecipeBackdrop" @cancel.prevent="closeRecipe" @transitionend="finishRecipeResize">
                 <button v-if="isCompact && selectedItem" class="recipe-close" aria-label="Закрыть рецепт" @click="closeRecipe"><Icon name="close" /></button>
-                <Transition name="recipe-content" mode="out-in" @before-enter="resetRecipeScroll">
+                <Transition name="recipe-content" mode="out-in" @before-leave="holdRecipeHeight" @before-enter="resetRecipeScroll" @enter="resizeRecipePane">
                 <div v-if="selectedItem" class="recipe-body" :key="selectedItem.id">
                   <div class="recipe-heading"><img :src="iconFor(selectedItem)" alt="" /><div><h2 data-od-id="recipe-title">{{ selectedItem.name }}</h2><span v-if="selectedItem.level">{{ selectedItem.level }} уровень</span><p v-if="selectedItem.classes.length">{{ selectedItem.classes.join(' · ') }}</p></div></div>
                   <p class="recipe-description">{{ selectedItem.description || 'Характеристики не указаны.' }}</p>

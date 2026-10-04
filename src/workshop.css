@@ -108,6 +108,10 @@ main { min-width: 0; padding: 28px 28px 0; }
 .class-back { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; min-height: 44px; padding: 6px 0; margin-bottom: 8px; }
 .class-back svg { width: 16px; height: 16px; }
 .catalog-tools { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin-top: 16px; }
+.catalog-controls.without-search { display: flex; align-items: center; gap: 12px; }
+.without-search .catalog-tools { margin-top: 0; }
+.without-search .results-meta { order: -1; flex: 1; min-width: 0; min-height: 54px; }
+.without-search .results-meta > span:last-child { display: none; }
 .global-search { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; min-height: 50px; padding: 10px 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 3px; box-shadow: inset 0 2px 6px var(--shadow); }
 .global-search > svg { color: var(--brass); width: 18px; height: 18px; }
 .global-search input { width: 100%; min-width: 0; font-size: 14px; color: var(--fg); border: 0; outline: none; background: transparent; }
@@ -208,8 +212,8 @@ main { min-width: 0; padding: 28px 28px 0; }
 .forge-tabs button.active { color: var(--brass); background: var(--surface); border-color: var(--brass-muted); }
 .forge-tabs span { font: 12px/1.5 var(--font-mono); }
 
-/* Stable recipe dimensions keep the catalog and footer in place. */
-.recipe-pane { position: sticky; top: 16px; height: calc(100dvh - 32px); overflow-y: auto; overflow-anchor: none; scrollbar-gutter: stable; scrollbar-width: thin; scrollbar-color: var(--brass-muted) var(--surface); width: 100%; align-self: start; border: 1px solid var(--brass-muted); border-top: 3px double var(--brass); border-radius: 3px; background: var(--surface); box-shadow: inset 0 0 0 4px var(--bg), 0 8px 18px var(--shadow); }
+/* Recipes keep their natural size and resize smoothly when content changes. */
+.recipe-pane { position: sticky; top: 16px; max-height: calc(100dvh - 32px); transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1); overflow-y: auto; overflow-anchor: none; scrollbar-gutter: stable; scrollbar-width: thin; scrollbar-color: var(--brass-muted) var(--surface); width: 100%; align-self: start; border: 1px solid var(--brass-muted); border-top: 3px double var(--brass); border-radius: 3px; background: var(--surface); box-shadow: inset 0 0 0 4px var(--bg), 0 8px 18px var(--shadow); }
 .recipe-body { padding: 22px; overflow: visible; }
 .recipe-content-enter-active { transition: opacity 120ms cubic-bezier(0.23, 1, 0.32, 1); }
 .recipe-content-leave-active { transition: opacity 80ms cubic-bezier(0.23, 1, 0.32, 1); }
@@ -279,7 +283,7 @@ main { min-width: 0; padding: 28px 28px 0; }
 }
 @media (max-width: 960px) {
   .class-content { grid-template-columns: minmax(0, 1fr); }
-  dialog.recipe-pane { position: fixed; inset: 0; width: calc(100% - 40px); max-width: 480px; height: calc(100dvh - 64px); max-height: calc(100dvh - 64px); min-height: 0; margin: auto; padding: 0; overflow-y: auto; color: var(--fg); overscroll-behavior: contain; }
+  dialog.recipe-pane { position: fixed; inset: 0; width: calc(100% - 40px); max-width: 480px; max-height: calc(100dvh - 64px); min-height: 0; margin: auto; padding: 0; overflow-y: auto; color: var(--fg); overscroll-behavior: contain; }
   dialog.recipe-pane::backdrop { background: #050a07cc; }
   body:has(dialog.recipe-pane[open]) { overflow: hidden; }
   .recipe-close { display: flex; align-items: center; justify-content: center; position: sticky; top: 0; z-index: 1; width: 44px; height: 44px; margin-left: auto; background: var(--surface); color: var(--brass); }
