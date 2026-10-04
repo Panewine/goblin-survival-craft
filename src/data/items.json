@@ -8067,7 +8067,7 @@
     "recipe": "Лапа гигантского арахнида\nСвеча рабовладельца\nОсколок света х2\n[Создается в Великой Кузнице]",
     "kind": "item",
     "row": 110,
-    "icon": "map-3661e6d4df6cc000.png",
+    "icon": "map-3661e6d4df6cc000-a45c76bf.png",
     "category": "weapon",
     "ingredients": [
       {
@@ -8157,7 +8157,7 @@
     "recipe": "Свеча рабовладельца\nГоблинский комбинезон\nПулемет",
     "kind": "item",
     "row": 111,
-    "icon": "map-c165ca7e5513b8db.png",
+    "icon": "map-c165ca7e5513b8db-06c12fe6.png",
     "category": "artifact",
     "ingredients": [
       {
@@ -25188,7 +25188,7 @@
     "recipe": "Сосуд с порченой водой\nОсколок Магий",
     "kind": "item",
     "row": 329,
-    "icon": "map-e65369923186a913.png",
+    "icon": "map-e65369923186a913-bb4f996a.png",
     "category": "material",
     "ingredients": [
       {
@@ -25250,7 +25250,7 @@
     "recipe": "Сосуд с лунной водой\nОсколок Магий",
     "kind": "item",
     "row": 330,
-    "icon": "map-610579fb489d68bb.png",
+    "icon": "map-610579fb489d68bb-8c716b9f.png",
     "category": "material",
     "ingredients": [
       {
@@ -27757,7 +27757,7 @@
     "recipe": "Сете-пушка Дрессировщика\nОчки Хазула\nБронежилет Бомбса\nКогтистая броня\nОчищающее зелье\n[Создается в Великой Кузнице]",
     "kind": "item",
     "row": 359,
-    "icon": "map-229e0c50ef8f95de.png",
+    "icon": "map-229e0c50ef8f95de-5884b370.png",
     "category": "artifact",
     "ingredients": [
       {

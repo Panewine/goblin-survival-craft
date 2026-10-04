@@ -687,14 +687,14 @@
       "kind": "game",
       "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNKoboldGeomancer.dds"
     },
-    "map-3661e6d4df6cc000.png": {
+    "map-3661e6d4df6cc000-a45c76bf.png": {
       "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBTNFlashlight.blp",
       "sourceFile": "newGUI\\source\\recovered-textures\\3661e6d4df6cc000.blp",
       "sha256": "0806ac705908fb4cac0bce5e6c8378154037dac9aad877e22a9fa386def9ff46",
       "kind": "map",
       "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
     },
-    "map-c165ca7e5513b8db.png": {
+    "map-c165ca7e5513b8db-06c12fe6.png": {
       "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNChainedToss.blp",
       "sourceFile": "newGUI\\source\\recovered-textures\\c165ca7e5513b8db.blp",
       "sha256": "a9028e1e54427b47da1fa603e7f96f9b6c27dbdd4f375387ad7322d1fd019ebd",
@@ -1946,14 +1946,14 @@
       "kind": "map",
       "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
     },
-    "map-e65369923186a913.png": {
+    "map-e65369923186a913-bb4f996a.png": {
       "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDarkFrag.blp",
       "sourceFile": "newGUI\\source\\recovered-textures\\e65369923186a913.blp",
       "sha256": "b99e5daf23993a0f00febeefa0e4f04466823cbbe334332bacf22674fe0867fc",
       "kind": "map",
       "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
     },
-    "map-610579fb489d68bb.png": {
+    "map-610579fb489d68bb-8c716b9f.png": {
       "mapIconPath": "war3mapImported\\BTNPureFrag.blp",
       "sourceFile": "newGUI\\source\\recovered-textures\\610579fb489d68bb.blp",
       "sha256": "2f7d918a8ecffc7f429cf85168feeab11e64cbdedc2b8cd8749405cadbdc2206",
@@ -2044,7 +2044,7 @@
       "kind": "map",
       "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
     },
-    "map-229e0c50ef8f95de.png": {
+    "map-229e0c50ef8f95de-5884b370.png": {
       "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUpgradeCannonHuman.blp",
       "sourceFile": "newGUI\\source\\recovered-textures\\229e0c50ef8f95de.blp",
       "sha256": "ebd4a132c7462d392c34147d6f233feaf5aaeb0c90988edf561d27ad5a76c1b7",
