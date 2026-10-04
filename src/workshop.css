@@ -79,6 +79,8 @@ button img { pointer-events: none; }
 .source-button { display: flex; align-items: start; gap: 8px; margin-top: auto; padding: 18px 10px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
 .source-button .status-dot { margin-top: 7px; }
 .mobile-categories { display: none; }
+.mobile-nav-backdrop { display: none; }
+.recipe-close { display: none; }
 main { min-width: 0; padding: 28px 28px 0; }
 
 /* The existing goblin artwork is the only large illustration. */
@@ -273,7 +275,10 @@ main { min-width: 0; padding: 28px 28px 0; }
 }
 @media (max-width: 960px) {
   .class-content { grid-template-columns: minmax(0, 1fr); }
-  .recipe-pane { position: relative; top: auto; max-height: none; overflow-y: visible; margin-top: 8px; }
+  dialog.recipe-pane { position: fixed; inset: 0; width: calc(100% - 40px); max-width: 480px; max-height: calc(100dvh - 64px); min-height: 0; margin: auto; padding: 0; overflow-y: auto; color: var(--fg); overscroll-behavior: contain; }
+  dialog.recipe-pane::backdrop { background: #050a07cc; }
+  body:has(dialog.recipe-pane[open]) { overflow: hidden; }
+  .recipe-close { display: flex; align-items: center; justify-content: center; position: sticky; top: 0; z-index: 1; width: 44px; height: 44px; margin-left: auto; background: var(--surface); color: var(--brass); }
   .class-content .cards:not(.compact) { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); }
   .intro-art { width: 72%; }
   .catalog-heading { align-items: flex-start; }
@@ -287,18 +292,18 @@ main { min-width: 0; padding: 28px 28px 0; }
   .brand small { font-size: 9px; letter-spacing: .9px; }
   .layout { grid-template-columns: minmax(0, 1fr); }
   .sidebar { display: none; }
-  .sidebar.mobile-open { display: flex; position: static; height: auto; min-height: 0; border-right: 0; border-bottom: 1px solid var(--brass-muted); padding: 14px 18px; }
+  .sidebar.mobile-open { display: flex; position: fixed; inset: auto 18px calc(84px + env(safe-area-inset-bottom)); z-index: 11; max-height: calc(100dvh - 120px - env(safe-area-inset-bottom)); height: auto; min-height: 0; overflow-y: auto; border: 1px solid var(--brass-muted); padding: 14px 18px; box-shadow: 0 8px 30px var(--shadow); }
+  .mobile-nav-backdrop { display: block; position: fixed; inset: 0; z-index: 10; background: #050a07bb; }
+  body:has(.sidebar.mobile-open) { overflow: hidden; }
   .sidebar nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sidebar-note, .source-button, .nav-label { display: none; }
   .sidebar nav button { padding: 10px; gap: 8px; }
-  .mobile-categories { display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--brass-muted); border-radius: 2px; color: var(--brass); font-size: 12px; white-space: nowrap; }
+  .mobile-categories { display: flex; align-items: center; gap: 9px; position: fixed; bottom: calc(20px + env(safe-area-inset-bottom)); right: 18px; z-index: 12; min-height: 52px; padding: 12px 18px; border: 2px solid var(--brass-muted); border-radius: 4px; background: var(--brass); color: var(--bg); box-shadow: 0 4px 18px #0009; font-size: 15px; font-weight: 600; white-space: nowrap; }
   main { padding: 20px 18px 0; }
-  .catalog-heading > div:not(.level-filter) { flex: 1 1 calc(100% - 110px); }
+  .catalog-heading > div:not(.level-filter) { flex: 1 1 100%; }
   .catalog-heading .level-filter, .class-items-heading .level-filter { order: 3; flex: 1 0 100%; width: 100%; }
-  .catalog-heading .mobile-categories { order: 2; margin-left: auto; }
   .class-items-heading h3 { flex: 1 1 100px; }
   .class-items-heading > img { width: 48px; height: 48px; }
-  .class-items-heading .mobile-categories { margin-left: auto; }
   .level-filter { padding-block: 2px 6px; }
   .catalog-tools { gap: 8px; }
   .global-search { padding-inline: 10px; gap: 8px; }
@@ -322,7 +327,6 @@ main { min-width: 0; padding: 28px 28px 0; }
   .class-portrait .class-name { font-size: 18px; }
   .class-switcher { gap: 8px; }
   .class-switcher button { width: 52px; height: 52px; }
-  .recipe-pane { margin-top: 14px; }
   .recipe-heading > img { width: 56px; height: 56px; }
 }
 @media (max-width: 430px) {
