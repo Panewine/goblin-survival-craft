@@ -128,8 +128,10 @@ main { min-width: 0; padding: 28px 28px 0; }
 .level-filter { flex: 0 1 270px; width: 270px; min-width: 0; margin-left: auto; padding: 6px 12px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: 3px; }
 .level-filter-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); }
 .level-filter-heading b { display: inline-block; margin-left: 6px; color: var(--fg); font-weight: 500; font-variant-numeric: tabular-nums; }
-.level-filter-heading { flex-wrap: wrap; }
-.level-filter-heading .level-mode-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: var(--brass); background: color-mix(in srgb, var(--brass) 12%, var(--bg)); border: 1px solid var(--brass-muted); border-radius: 3px; min-height: 44px; padding: 8px 10px; white-space: nowrap; font-size: 12px; font-weight: 600; cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease; }
+.level-filter-heading { flex-wrap: nowrap; }
+.level-filter-heading > span { white-space: nowrap; }
+.level-filter-heading .level-mode-button { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 88px; gap: 4px; color: var(--brass); background: color-mix(in srgb, var(--brass) 12%, var(--bg)); border: 1px solid var(--brass-muted); border-radius: 3px; min-height: 32px; padding: 4px 6px; white-space: nowrap; font-size: 11px; font-weight: 600; cursor: pointer; transition: background-color 160ms ease, border-color 160ms ease; }
+.level-mode-button svg { width: 14px; height: 14px; }
 .level-filter-heading .level-mode-button:hover { background: color-mix(in srgb, var(--brass) 22%, var(--bg)); border-color: var(--brass); }
 .level-filter-heading .level-mode-button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
 .level-filter-heading .level-mode-button:active { background: color-mix(in srgb, var(--brass) 30%, var(--bg)); }
