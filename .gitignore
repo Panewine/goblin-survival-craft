@@ -1,0 +1,36 @@
+# Publish only the website, its build configuration and relevant tests.
+/*
+!/.gitignore
+!/.github/
+!/.github/**
+!/index.html
+!/package.json
+!/package-lock.json
+!/vite.config.js
+!/README.md
+!/src/
+!/src/**
+/src/style.css
+/src/design.css
+/src/RecipeTree.vue
+!/public/
+!/public/**
+!/tests/
+/tests/*
+!/tests/catalog.test.js
+!/tests/fit-card-title.test.js
+!/source/
+/source/*
+!/source/map-objects.json
+!/source/map-report.json
+
+# Credentials and local files must never be committed.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+**/node_modules/
+**/__pycache__/

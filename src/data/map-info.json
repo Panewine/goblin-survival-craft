@@ -1,0 +1,45 @@
+{
+  "mapName": "Goblin Survival v1.5.5fix15",
+  "objectCount": 920,
+  "recipeCount": 619,
+  "matchedCatalogCount": 471,
+  "hiddenCatalogCount": 8,
+  "mapIconCount": 195,
+  "archiveIconCount": 0,
+  "gameIconCount": 276,
+  "missingTextures": [],
+  "unmatchedCatalog": [
+    {
+      "id": "item-479",
+      "name": "Кровь Экзода"
+    },
+    {
+      "id": "item-480",
+      "name": "Эзотерическое учение"
+    },
+    {
+      "id": "item-481",
+      "name": "Эксцесс искревления"
+    },
+    {
+      "id": "item-482",
+      "name": "Подношение небытию"
+    },
+    {
+      "id": "item-483",
+      "name": "Дар небытия"
+    },
+    {
+      "id": "item-484",
+      "name": "Проклятие Экзода"
+    },
+    {
+      "id": "item-485",
+      "name": "Сумеречное Око"
+    },
+    {
+      "id": "item-486",
+      "name": "Испепелитель"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "engineer",
+    "name": "Инженер",
+    "icon": "./icons/classes/engineer.png",
+    "mapUnitId": "N000",
+    "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp"
+  },
+  {
+    "id": "sniper",
+    "name": "Снайпер",
+    "icon": "./icons/classes/sniper.png",
+    "mapUnitId": "H004",
+    "iconPath": "BTNGoblintinkeralt.blp"
+  },
+  {
+    "id": "stalker",
+    "name": "Сталкер",
+    "icon": "./icons/classes/stalker.png",
+    "mapUnitId": "H000",
+    "iconPath": "BTNGoblinIn.blp"
+  },
+  {
+    "id": "rocketeer",
+    "name": "Ракетчик",
+    "icon": "./icons/classes/rocketeer.png",
+    "mapUnitId": "H003",
+    "iconPath": "BTNGoblinZeppelin.BLP"
+  },
+  {
+    "id": "gunner",
+    "name": "Пулемётчик",
+    "icon": "./icons/classes/gunner.png",
+    "mapUnitId": "H005",
+    "iconPath": "BTNGoblinMiner.blp"
+  },
+  {
+    "id": "pyromaniac",
+    "name": "Пироманьяк",
+    "icon": "./icons/classes/pyromaniac.png",
+    "mapUnitId": "H001",
+    "iconPath": "BTNGoblinPyrotechnician.blp"
+  },
+  {
+    "id": "medic",
+    "name": "Медик",
+    "icon": "./icons/classes/medic.png",
+    "mapUnitId": "H002",
+    "iconPath": "BTNGoblinFireworker.blp"
+  },
+  {
+    "id": "demolitionist",
+    "name": "Подрывник",
+    "icon": "./icons/classes/demolitionist.png",
+    "mapUnitId": "H006",
+    "iconPath": "BTNBombardier.blp"
+  }
+]

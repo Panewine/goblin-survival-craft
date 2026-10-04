@@ -1,0 +1,157 @@
+[
+  {
+    "id": "arachnid",
+    "name": "Гигантский арахнид",
+    "icon": "./icons/bosses/arachnid.png",
+    "itemIds": [
+      "item-95"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n017",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArachnathidPurple.dds"
+  },
+  {
+    "id": "slavemaster",
+    "name": "Потный рабовладелец",
+    "icon": "./icons/bosses/slavemaster.png",
+    "itemIds": [
+      "item-108",
+      "item-109",
+      "item-199"
+    ],
+    "iconSource": "game-user-mapping",
+    "mapUnitId": "n00L",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNKobold.dds"
+  },
+  {
+    "id": "guardian",
+    "name": "Страж врат",
+    "icon": "./icons/bosses/guardian.png",
+    "itemIds": [
+      "item-133",
+      "item-134",
+      "item-204",
+      "item-205"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n00Q",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRevenant.dds"
+  },
+  {
+    "id": "excavator",
+    "name": "Экскаватор КУС",
+    "icon": "./icons/bosses/excavator.png",
+    "itemIds": [
+      "item-155"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n00W",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHeroTinker.dds"
+  },
+  {
+    "id": "lust",
+    "name": "Похоть",
+    "icon": "./icons/bosses/lust.png",
+    "itemIds": [
+      "item-187",
+      "item-296"
+    ],
+    "iconSource": "game-user-mapping",
+    "mapUnitId": "n01C",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDemoness.dds"
+  },
+  {
+    "id": "bombs",
+    "name": "Бомбс и Аккуратерс",
+    "icon": "./icons/bosses/bombs.png",
+    "itemIds": [
+      "item-224",
+      "item-225",
+      "item-226",
+      "item-228",
+      "item-229",
+      "item-230"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n01H",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMortarTeam.dds"
+  },
+  {
+    "id": "greed",
+    "name": "Алчность",
+    "icon": "./icons/bosses/greed.png",
+    "itemIds": [
+      "item-238",
+      "item-294"
+    ],
+    "iconSource": "game-user-mapping",
+    "mapUnitId": "n01O",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDemoness.dds"
+  },
+  {
+    "id": "hazul",
+    "name": "Хазул",
+    "icon": "./icons/bosses/hazul.png",
+    "itemIds": [
+      "item-256",
+      "item-259"
+    ],
+    "iconSource": "game-user-mapping",
+    "mapUnitId": "n01Q",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRexxar.dds"
+  },
+  {
+    "id": "fear",
+    "name": "Страх",
+    "icon": "./icons/bosses/fear.png",
+    "itemIds": [
+      "item-304",
+      "item-305"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n02B",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTichondrius.dds"
+  },
+  {
+    "id": "handler",
+    "name": "Дрессировщик",
+    "icon": "./icons/bosses/handler.png",
+    "itemIds": [
+      "item-339",
+      "item-340"
+    ],
+    "iconSource": "game-user-mapping",
+    "mapUnitId": "n02J",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMortarTeam.dds"
+  },
+  {
+    "id": "envy",
+    "name": "Зависть",
+    "icon": "./icons/bosses/envy.svg",
+    "itemIds": [
+      "item-369",
+      "item-370"
+    ]
+  },
+  {
+    "id": "shizzl",
+    "name": "Шиззл",
+    "icon": "./icons/bosses/shizzl.png",
+    "itemIds": [
+      "item-427",
+      "item-428"
+    ],
+    "iconSource": "game-model",
+    "mapUnitId": "n030",
+    "gameIconPath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.dds"
+  },
+  {
+    "id": "death",
+    "name": "Смерть",
+    "icon": "./icons/bosses/death.svg",
+    "itemIds": [
+      "item-450",
+      "item-477"
+    ]
+  }
+]

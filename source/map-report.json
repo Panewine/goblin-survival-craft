@@ -1,0 +1,2662 @@
+{
+  "mapName": "Goblin Survival v1.5.5fix15",
+  "objectCount": 920,
+  "recipeCount": 619,
+  "matchedCatalogCount": 471,
+  "hiddenCatalogCount": 8,
+  "mapIconCount": 195,
+  "archiveIconCount": 0,
+  "gameIconCount": 276,
+  "missingTextures": [],
+  "unmatchedCatalog": [
+    {
+      "id": "item-479",
+      "name": "Кровь Экзода"
+    },
+    {
+      "id": "item-480",
+      "name": "Эзотерическое учение"
+    },
+    {
+      "id": "item-481",
+      "name": "Эксцесс искревления"
+    },
+    {
+      "id": "item-482",
+      "name": "Подношение небытию"
+    },
+    {
+      "id": "item-483",
+      "name": "Дар небытия"
+    },
+    {
+      "id": "item-484",
+      "name": "Проклятие Экзода"
+    },
+    {
+      "id": "item-485",
+      "name": "Сумеречное Око"
+    },
+    {
+      "id": "item-486",
+      "name": "Испепелитель"
+    }
+  ],
+  "iconFiles": {
+    "game-434df9c594d303e0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpOne.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\434df9c594d303e0.dds",
+      "sha256": "8b706702355484623cd75b4a345bf238d66827a4197d5e9dcd3cf4f5a1174e80",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpOne.dds"
+    },
+    "game-73dfd15e4010c026.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMurgulBloodGill.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\73dfd15e4010c026.dds",
+      "sha256": "86eaabf02b368ce989c9f92cc9dcc8a5f06a2c884842d7d23066d399688552dc",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMurgulBloodGill.dds"
+    },
+    "game-1c689bc63e065463.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpThree.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1c689bc63e065463.dds",
+      "sha256": "755e43bd7d941870ace2b25f1197ffbf49a698244b127816986fa0ea239463ea",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHumanMissileUpThree.dds"
+    },
+    "game-645277993638c2ac.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\645277993638c2ac.dds",
+      "sha256": "26f5d71379d854352e17ed924916f5a2bfdc58e70a72d5d20e0acf2d67280925",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMurlocNightCrawler.dds"
+    },
+    "map-b62680e36bf16890.png": {
+      "mapIconPath": "BTNFlamethrower.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\b62680e36bf16890.blp",
+      "sha256": "c64bf6a49688e2159b312a5bf350025aaf17bcabea55d423dbce46b83574c78d",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-3bc0a7fa81480b49.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMurgulShadowCaster.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3bc0a7fa81480b49.dds",
+      "sha256": "334dc29184ec557490fdff9009293c201ccec14c1bb5c1e1276aa0cc5df7442c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMurgulShadowCaster.dds"
+    },
+    "game-cde345f6b18c4bdd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFlakCannons.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cde345f6b18c4bdd.dds",
+      "sha256": "d4ad3ce92bb627f40cf9e39913d67d754b9b7c0574d53f5a03c8e62e41e0fd2d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFlakCannons.dds"
+    },
+    "game-e945ddc01e0c8df2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSnapDragon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e945ddc01e0c8df2.dds",
+      "sha256": "0d5700d3ee989170e3f6fcc3ffe313054cd4b6e763592cb3668d867361121c31",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSnapDragon.dds"
+    },
+    "map-a0b93f281a9e4f70.png": {
+      "mapIconPath": "BTNTNT.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a0b93f281a9e4f70.blp",
+      "sha256": "59b3203cc221df7c9d68f1036b9111a46ed1a39729bbf5c0ae794c3441f75406",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-271b93cec4d486ee.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNShimmerWeed.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\271b93cec4d486ee.dds",
+      "sha256": "30c365ca9cb558a2341aa960ce97be1d4f02f2fd9448a84d7deaad4255d1511a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNShimmerWeed.dds"
+    },
+    "game-fcdeb15f588a7312.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDwarvenLongRifle.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\fcdeb15f588a7312.dds",
+      "sha256": "628aa2cbe74916bd1088c67ec80992468d78f01e5d9679744b47b47676b3c5bf",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDwarvenLongRifle.dds"
+    },
+    "game-ef80cbf279f0d497.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMurlocMutant.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ef80cbf279f0d497.dds",
+      "sha256": "bdef52c6a7199e448ada5f62f314d629ef4f414ebac3c4f46a85fc1a9c70eb53",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMurlocMutant.dds"
+    },
+    "map-9fe5728e734825f7.png": {
+      "mapIconPath": "BTNArcaniteWeapon.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9fe5728e734825f7.blp",
+      "sha256": "721d9063d3bb7ff08b60c7043a6b2e685aa182e7830076652b368a9529a56d71",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-e14f5d538a5907dc.png": {
+      "mapIconPath": "BTNINV_Misc_Food_16.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\e14f5d538a5907dc.blp",
+      "sha256": "571e49f46ad04c1ba9a822a46770cfb122db42284a27bc23fc617400d0d0f0aa",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-405b208a1e83fa56.png": {
+      "mapIconPath": "BTNArcaniteRocket.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\405b208a1e83fa56.blp",
+      "sha256": "3b426ace488ae06cad49c4f04bf8cba37db4f1cb80f36781130a3cd8eafd4779",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-d4827cb7f0d7d94b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d4827cb7f0d7d94b.dds",
+      "sha256": "62208d2bc2c44bb2010c7a212c3b2f90a2c6f7f94773e7f94f95dee251916c57",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDarkSummoning.dds"
+    },
+    "map-3130033ce882b2f7.png": {
+      "mapIconPath": "BTNArcaniteFlamethrower.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3130033ce882b2f7.blp",
+      "sha256": "8a7123f86e081ca8d3a51afc692d4277fd72d381f5f6b7c3a614e3de135bd59d",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-a5075242a2a7932e.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNThunderLizardSalamander.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a5075242a2a7932e.dds",
+      "sha256": "5707ca9166f7283fbd730ba6c11e83d780f842f166394a175bab704eff668dc2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNThunderLizardSalamander.dds"
+    },
+    "map-4dd52a099ee5caf0.png": {
+      "mapIconPath": "BTNArcaniteGun.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4dd52a099ee5caf0.blp",
+      "sha256": "99a09097ce4eebb6dd3198879cc64bf49c14c04f72809f64194fc565d077a667",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-01bc1c60ebe41c06.png": {
+      "mapIconPath": "BTNINV_Misc_Fish_05.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\01bc1c60ebe41c06.blp",
+      "sha256": "0b369de992ce6441803c3214e1bc0ab566317c0adab7305b58d4585309736a77",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-4d85917156e1951b.png": {
+      "mapIconPath": "BTNArcaniteBombs.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4d85917156e1951b.blp",
+      "sha256": "4f24c0e8a457925278065e3fe9669833e66c8c165bbd9add167c59fcb287f88b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-06a7dc9443352896.png": {
+      "mapIconPath": "BTNArcaniteBallArrows.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\06a7dc9443352896.blp",
+      "sha256": "d7c348bf82156f7d874131dbf5658d8b87d11741d9a476dca8a7a031ad026584",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-451f5594e41e11f3.png": {
+      "mapIconPath": "BTNgoblinhelmet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\451f5594e41e11f3.blp",
+      "sha256": "3900e57669f47fddd5e906c1d0ccab7f8438aa63c1ab1d17637f85498bfbcf28",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-9aa0e966c0c34eea.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPendantOfMana.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9aa0e966c0c34eea.dds",
+      "sha256": "075f5f60e89d62161ce78793dfdba074c2b142830bf5db6c2d51419ce1e37542",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPendantOfMana.dds"
+    },
+    "game-d28dc320498cea7a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPendantOfEnergy.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d28dc320498cea7a.dds",
+      "sha256": "69b798e49ccd5bb40810fe77f560bc4f8fc0c40159829ca30f3065e1de0b3280",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPendantOfEnergy.dds"
+    },
+    "game-af2ce82fe9cb04aa.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMonsterLure.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\af2ce82fe9cb04aa.dds",
+      "sha256": "5857ea2a753eb1b4f6f8635332a9c5782079eda8ad31ed62be29247fffa59832",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMonsterLure.dds"
+    },
+    "map-f8f3fac502d65c40.png": {
+      "mapIconPath": "BTNJacket.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\f8f3fac502d65c40.blp",
+      "sha256": "1c19582a4f57a1ea04565cd8713f5371936283f79184cf38ccfc7e4afc922cdb",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-bc1674a5bcf1fc3c.png": {
+      "mapIconPath": "BTNGoblinsBoots.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\bc1674a5bcf1fc3c.blp",
+      "sha256": "593f0f61c9868433cb0e003fb892bc0ac9649066ef744a14b00cd181db3da39b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-d76037cc9c75b3be.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHeartOfSearinox.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d76037cc9c75b3be.dds",
+      "sha256": "a09004498460275b9881b2b792d9e1e34984a7e2f33928fa64ad40e40cc2bd75",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHeartOfSearinox.dds"
+    },
+    "map-baf88c79ee6d3eee.png": {
+      "mapIconPath": "BTNGoblinsGlowe.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\baf88c79ee6d3eee.blp",
+      "sha256": "1424e105e4e20fe117d6d0ec0fea55516ebc9a303b6a410c2664d98248f3fc73",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-a0cac3fe2c82e64c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeTwo.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a0cac3fe2c82e64c.dds",
+      "sha256": "0378c0469c96ec7bae11c943d53246f20ea6e63a363d305fde36fa568ab50906",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeTwo.dds"
+    },
+    "map-7a12e5e2702b93ad.png": {
+      "mapIconPath": "BTNINV_Misc_Food_13.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7a12e5e2702b93ad.blp",
+      "sha256": "8f983dc69b882314ed7f7f4adf7276c54daab1210024ab580239624923a96239",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-958ce4215ed65852.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeThree.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\958ce4215ed65852.dds",
+      "sha256": "0afeb06b2924064cfa726e16c2553b7d70ce6a0ada48b261000b9ce9b1f787af",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeThree.dds"
+    },
+    "game-f4d767202e53e4c7.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNatureTouchGrow.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f4d767202e53e4c7.dds",
+      "sha256": "025ef17d6db81f17baccc066d495aef5b4d4b85494e0295bf53018cf5f18129c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNatureTouchGrow.dds"
+    },
+    "game-7060a5098eb2bc8a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeOne.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7060a5098eb2bc8a.dds",
+      "sha256": "94c522200abc6606305e4c01283e4044bb97eacda5b88ca4909cbc636a62d88f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeOne.dds"
+    },
+    "game-9a3c99e24925bff6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNThunderLizardVizier.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9a3c99e24925bff6.dds",
+      "sha256": "25c4dbb9ef2b0acdaffb2e429fd592621ce97a17dfa5846bcf2eeebc5490e8c0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNThunderLizardVizier.dds"
+    },
+    "game-19a770de7b5ce487.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\19a770de7b5ce487.dds",
+      "sha256": "2044bd934da0acdd35f4ff685260a806bddf1784fa943f2388cc424f6146f386",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArmorGolem.dds"
+    },
+    "game-5ff75b4dc1e3aaa9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHoodOfCunning.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5ff75b4dc1e3aaa9.dds",
+      "sha256": "cdafc84109efbda0491b3d353eaaa52cbca9b4516f927793c4645ac93b652719",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHoodOfCunning.dds"
+    },
+    "game-cf4f151ccfdc0075.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSobiMask.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cf4f151ccfdc0075.dds",
+      "sha256": "9d4c588b365cc465f1d231ef2b80082dbdf0f810e544b72ce1e18f61f104fd7c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSobiMask.dds"
+    },
+    "map-f62a344bab672ab8.png": {
+      "mapIconPath": "BTNGoblinsSet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\f62a344bab672ab8.blp",
+      "sha256": "5cc4928474e39179fb06e99a442f5a6a13021289aa56553133f796fb0305bcfa",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-a50a9e3bcc060ea8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDustOfAppearance.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a50a9e3bcc060ea8.dds",
+      "sha256": "2d30eef7ead27fce6de79d7b9aa19e014f96cbc12126971ed932ebd1a6e0a4b2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDustOfAppearance.dds"
+    },
+    "game-370874ab7da347e4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUnholyAura.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\370874ab7da347e4.dds",
+      "sha256": "429ee0848bc4ef39568c417c3d70f05b038e75a304f223bd5e7b95ad53433fa5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUnholyAura.dds"
+    },
+    "game-cd5975abc1141a15.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCreatureCarapace.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cd5975abc1141a15.dds",
+      "sha256": "54eed5e255e96fa5e27d5ea9d9d46beff7c80db3c5e2323179fdd4989850c4cb",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCreatureCarapace.dds"
+    },
+    "game-066d8d6410fc94cd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAncientOfWonders.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\066d8d6410fc94cd.dds",
+      "sha256": "86ad5f8c29a533efc44d2640563db8838313b954a2e1fd9d106209c682551423",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAncientOfWonders.dds"
+    },
+    "map-deacf3ca0e29a284.png": {
+      "mapIconPath": "BTNSilverBracket.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\deacf3ca0e29a284.blp",
+      "sha256": "88a351dd7b232d6bc9e84ed72f04c06a696714ad5223c8b4cea97cf99be40614",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-f9530a619b5b72ba.png": {
+      "mapIconPath": "BTNSilverAmulet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\f9530a619b5b72ba.blp",
+      "sha256": "e8046cf8e59613e42037beb813a0a1854fd2fe11c6dc8222cd9cce053fa81017",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-47d6c9cf2b8599c8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTN3M2.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\47d6c9cf2b8599c8.dds",
+      "sha256": "d816617a6fe78f2c33d1e55bc92ad396d43d6bbce725e67cbd5e7e6f22f92750",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTN3M2.dds"
+    },
+    "game-07cce86d7a9cf5ef.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTN3M3.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\07cce86d7a9cf5ef.dds",
+      "sha256": "05e3d977dcf6539f74cb472a77786a1815f9d4243324a40a596634377b50c69f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTN3M3.dds"
+    },
+    "map-68a38352deabd585.png": {
+      "mapIconPath": "BTNTrade_Fishing.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\68a38352deabd585.blp",
+      "sha256": "aa0499d4cb29edf8516e69d89b90e754354e2fb85e419d23bfb30f5a75661b11",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-acb3c25f86270455.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLesserClarityPotion.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\acb3c25f86270455.dds",
+      "sha256": "20bda54c8f56214e7785ae2d6ec80092ca6bbfcfaabf1297a73363090fd2b146",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLesserClarityPotion.dds"
+    },
+    "game-0e679938211e8cd8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHealingSalve.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0e679938211e8cd8.dds",
+      "sha256": "aece98ec893317c65f58fd6c0e20403d8f50e9ac24c5038a2f6b0cc8c3ad9bdf",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHealingSalve.dds"
+    },
+    "game-420a0bddb2c36849.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionBlueBig.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\420a0bddb2c36849.dds",
+      "sha256": "64ab3c5836828226d9b44dcf55ac7469a0283e142ac56f56698e665e00ff5832",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionBlueBig.dds"
+    },
+    "game-490df2ded2349295.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBarrel.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\490df2ded2349295.dds",
+      "sha256": "d28fa54909c20db1141615b6fac2bc66435a84ef9d8dd643834cce5b4bbcf825",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBarrel.dds"
+    },
+    "game-bf9e224bfa4fae64.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMinorRejuvPotion.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\bf9e224bfa4fae64.dds",
+      "sha256": "c45f6f91e443ee4562b2da5f32bbe1c0c7a5be2fd78bd78e229def5bd4290ba9",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMinorRejuvPotion.dds"
+    },
+    "game-dbc61637fcd813b8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLesserRejuvPotion.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\dbc61637fcd813b8.dds",
+      "sha256": "18827af7b90c1d5eadeab2d619bb99e86ddf1fd64700c52566fb13ee0159034f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLesserRejuvPotion.dds"
+    },
+    "game-9abd35e53b6004f6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGreaterRejuvPotion.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9abd35e53b6004f6.dds",
+      "sha256": "aa711168d601377f74d502fad7b79f4e2a59f78cc292839729ba2fa670b4e4cd",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGreaterRejuvPotion.dds"
+    },
+    "game-f1b968b604b4e047.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTome.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f1b968b604b4e047.dds",
+      "sha256": "ccd3be577ebd147683bc8b723ee39d721a4ca08ffaacfb329295c71a67cce89a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTome.dds"
+    },
+    "map-caf44bdfd0c59ccc.png": {
+      "mapIconPath": "BTNAbsolute.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\caf44bdfd0c59ccc.blp",
+      "sha256": "81a941ba3b93c728fcc3c830d0a28c99cdf2630992cb6d6432f9740f9aad69b6",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-8d045e785e643ee9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNmolten_jewels.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\8d045e785e643ee9.blp",
+      "sha256": "3db6051cd2005665b1a5545c97d2559d96cc0050ff988123af4c9839ad6da221",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-3facd98a9c44f0aa.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_04.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3facd98a9c44f0aa.blp",
+      "sha256": "e7a2e1ceb9c316bea1bb0697122df52c55870cb84abf1970109d3489fefb9588",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-19bff3ee0bfeab76.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_04_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\19bff3ee0bfeab76.blp",
+      "sha256": "369dfbdd29852271d04ada8d46c6609d9c64493a7e8b8023b7e4b4f995ee0094",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-caf8496ea5114a23.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_05.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\caf8496ea5114a23.blp",
+      "sha256": "9a559c373904845f306b6665e77a4abda075b9b387dc4c25cf5a71ba682a3dc6",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-b2d5b2fac2fd522d.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_05_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\b2d5b2fac2fd522d.blp",
+      "sha256": "f8fe40b28929141ade6503fe17541e20a0cfed0450c7ad757e4e81d9c2478f6b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-477b44c2f2330eaa.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_10.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\477b44c2f2330eaa.blp",
+      "sha256": "b9dd8f5332c9119935bcd39b5a99e17d7af808d54718ff785e8414465db7ee7e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-94c5c0f5943ba73e.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_10_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\94c5c0f5943ba73e.blp",
+      "sha256": "c78c9d5b71b95939ba1450479d6467987c03c8e9638fd77c9ce019840ea6b65e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-ece364508df4bbdb.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_09.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\ece364508df4bbdb.blp",
+      "sha256": "8c635252c0fd95ebaf598228fdda129c2b58540497ffcf372a9b77aba1a58447",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-352bbde3a5ab9a4e.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_09_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\352bbde3a5ab9a4e.blp",
+      "sha256": "d00f4abea5979aeabccd6d3644abe4a52d0be2643ee04e1ffc4610f9b13a02c0",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-4e4159db0bb6afa8.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_14.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4e4159db0bb6afa8.blp",
+      "sha256": "795f81c71893eee119d6a7669b7dd0456a8fbbce80e90a59025b26ee0e8ff7ce",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-d3e359de6ce1b687.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_14_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\d3e359de6ce1b687.blp",
+      "sha256": "1c2ef1391252d676f16ffcae6258360d4c5c8d1af70217e30e56f39522072c0c",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-4b5c7c6eba08087a.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_08.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4b5c7c6eba08087a.blp",
+      "sha256": "e10413d133a5e3e8170cc7b40b71b1c035367a89ece17622c660486629b62073",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7395e73aa0fe3aaa.png": {
+      "mapIconPath": "BTNINV_Jewelry_Ring_08_dem.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7395e73aa0fe3aaa.blp",
+      "sha256": "3fa9c98974881e07b59666a3886f5ac30b1fd2a86a09e5ea06db7fe1e40f05c4",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7c19c66445a9c802.png": {
+      "mapIconPath": "BTNAbsoluteEnchanted.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7c19c66445a9c802.blp",
+      "sha256": "156a871aab744beeebb9304fdb3ac3cd04be58826fdc0c201318568f1e971f77",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-8a4a52ef218d89b1.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNagaArmorUp2.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\8a4a52ef218d89b1.dds",
+      "sha256": "d9303862df1e47037e86337d96a0b1a5e63461335cd7a956acfea725f6c94193",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNagaArmorUp2.dds"
+    },
+    "game-506c6b5287b6859a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSkeletalLongevity.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\506c6b5287b6859a.dds",
+      "sha256": "d09d1963047be36e38450e13fc082bbc69727cdf9f35cb1348d5f66460a3684f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSkeletalLongevity.dds"
+    },
+    "game-a80600404269dd61.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArachnathidGreen.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a80600404269dd61.dds",
+      "sha256": "b2462f6411d6b032cdb57c13778c2070975aad8556006cc3c7d4c61a34aef70c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArachnathidGreen.dds"
+    },
+    "game-d0f6d2e123c1c099.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNImprovedCreatureAttack.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d0f6d2e123c1c099.dds",
+      "sha256": "37ba3d0abdda8ffff7e66b02f87bbda193480a140445057d58056f72aa7efc0b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNImprovedCreatureAttack.dds"
+    },
+    "game-2ffbedada406dd40.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNImprovedMoonArmor.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\2ffbedada406dd40.dds",
+      "sha256": "6a8d9502266bc525a8f9c1a2ff7e38f04dc93ec39fbf973c01162caafa2e9050",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNImprovedMoonArmor.dds"
+    },
+    "game-5ed44ba8ecd44fb8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5ed44ba8ecd44fb8.dds",
+      "sha256": "dcc5837ad865ff43264809a8526f0891fca36e0ce90087103456ddd99eb9a6e0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.dds"
+    },
+    "game-0db4e302e70569d9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBootsOfSpeed.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0db4e302e70569d9.dds",
+      "sha256": "90ac2dcd0b639a595e942bdbe95caf082969a4722108e983819d04e2ea9c1005",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBootsOfSpeed.dds"
+    },
+    "game-12632eaada0e9b7c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\12632eaada0e9b7c.dds",
+      "sha256": "530ca1396a641a6a3a349227a860f041fc4b1d81a07a9d6c9ea0da0187b97c92",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGuldanSkull.dds"
+    },
+    "map-1a5fb133a7cdcb6e.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSniperRifle.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\1a5fb133a7cdcb6e.blp",
+      "sha256": "d1351e5bc9a1ab27b50a4a79996f34f0e438748885faed9cbd5798125d837fa3",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-f59cb7839be6e6bc.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFelHound.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f59cb7839be6e6bc.dds",
+      "sha256": "ccc943cf4f42b37cef626f71460a639470d45fb82c914f30baa54c50e32f9415",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFelHound.dds"
+    },
+    "game-d372b04cb8903c44.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedMoonArmor.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d372b04cb8903c44.dds",
+      "sha256": "9a3f3734105cd3b8ad1223d1ad416cf10e2ffb4a2d5f49d7e556a670884048e5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedMoonArmor.dds"
+    },
+    "game-0926e953a8fa55a9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyArmor.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0926e953a8fa55a9.dds",
+      "sha256": "6f8d55851f67417ae53426fae062375cc7a52aee1bfdba9004402c2881654240",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyArmor.dds"
+    },
+    "game-816a8f71ed78ec96.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNagaArmorUp3.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\816a8f71ed78ec96.dds",
+      "sha256": "7cb7295957a84b47148f4d44d8a12796a2cd17089a457e70bd2b77b546aa813b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNagaArmorUp3.dds"
+    },
+    "map-20e7ab08edf331e1.png": {
+      "mapIconPath": "BTNINV_Misc_Candle_01.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\20e7ab08edf331e1.blp",
+      "sha256": "180c63d524e383fac5b3719961aefad8899e1b5d46deccca1b644ebe5be63a77",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-3d57c62908733b06.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGatherGold.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3d57c62908733b06.dds",
+      "sha256": "f1264bc5830260c98818ccdb4e9eb97fd4ab55b1b130305b993fb726071d1e3d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGatherGold.dds"
+    },
+    "game-e894f49e147574d0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGauntletsOfOgrePower.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e894f49e147574d0.dds",
+      "sha256": "debc62f3f9afa908018b320b21753a83653e0e68db1c05e177d6f3282eecf57c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGauntletsOfOgrePower.dds"
+    },
+    "game-6f3fe7f434c1f674.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNClawsOfAttack.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\6f3fe7f434c1f674.dds",
+      "sha256": "c75bfda7fb197fe7f13f6344354421fe3d52b2d00e8d08455d5fb756cea33f80",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNClawsOfAttack.dds"
+    },
+    "game-761098db84bf34d1.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHolyBolt.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\761098db84bf34d1.dds",
+      "sha256": "2c87bd748109d187a76fb1667e9f3618d5caf8e7b4ae35bc4ceab2c3391431ff",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHolyBolt.dds"
+    },
+    "game-f19662815a616a32.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedStrengthOfTheMoon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f19662815a616a32.dds",
+      "sha256": "35ad12477a37799d2ad69677096cb7a698ded535e035f875b63627bbf6e48e2f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedStrengthOfTheMoon.dds"
+    },
+    "game-276e1ea5596d4b02.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNKoboldGeomancer.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\276e1ea5596d4b02.dds",
+      "sha256": "5642f1c82d6396f39be09262084e10c21ac999f24ef45fb18bdf9be3eef13d57",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNKoboldGeomancer.dds"
+    },
+    "map-3661e6d4df6cc000.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBTNFlashlight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3661e6d4df6cc000.blp",
+      "sha256": "0806ac705908fb4cac0bce5e6c8378154037dac9aad877e22a9fa386def9ff46",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-c165ca7e5513b8db.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNChainedToss.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\c165ca7e5513b8db.blp",
+      "sha256": "a9028e1e54427b47da1fa603e7f96f9b6c27dbdd4f375387ad7322d1fd019ebd",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-9a3fc2a613cef50b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAmulet.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9a3fc2a613cef50b.dds",
+      "sha256": "49282de82e078adf18729eb89348ed1b57daff27ef2cace993f8802f7072d058",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAmulet.dds"
+    },
+    "game-c38baddb5643fe6d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c38baddb5643fe6d.dds",
+      "sha256": "f35a2ce6379d025ffbbd22a34ad298fe821f4b5b3865b646bb1ff512f667a08a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNEntrapmentWard.dds"
+    },
+    "game-0f5d05fa91c0b9e9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0f5d05fa91c0b9e9.dds",
+      "sha256": "3f127e7dc4c0381f94468e055638c970dc04e76ced1a2144f710b3c68d121ebf",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.dds"
+    },
+    "map-9c46b57887cfc23c.png": {
+      "mapIconPath": "BTNPlate Gauntlet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9c46b57887cfc23c.blp",
+      "sha256": "11f076b221c9891f64bb0bc49373c6b1bac2df96644bdd5810b3e252e1a88c7f",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-93407b9ee88fd9b2.png": {
+      "mapIconPath": "BTNHoly Plated Gauntlet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\93407b9ee88fd9b2.blp",
+      "sha256": "74f13ecf5aaa0b0cb3f3a88f19c9010313c5b9b486271fec9e3bc7c5359cdf98",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-5051a2e72d6f8678.png": {
+      "mapIconPath": "BTNSelf-LoadingShotgun.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\5051a2e72d6f8678.blp",
+      "sha256": "8d11682f4c1f982ccc75e0b389bc7739178707bdcf13a051fbc04a46fbb5235b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-9887636217f79770.png": {
+      "mapIconPath": "BTNSniper.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9887636217f79770.blp",
+      "sha256": "4454e97fe80db752220aeb62ef0bdfe22186e8e17fb4c74f26752986261b0687",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-0338a1e5dd83d3e9.png": {
+      "mapIconPath": "BTNAvalanche.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0338a1e5dd83d3e9.blp",
+      "sha256": "04b5a460c9cc8800e0821a8cbcb2c884a3b6c360113399f4b4553d6dd1e3ceed",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-dea2f9038a2cdc7a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPillage.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\dea2f9038a2cdc7a.dds",
+      "sha256": "a55c2b7305761b2d291b8b7f152b44f2c61dc84cce22c5fbbed593bfd2e55fbc",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPillage.dds"
+    },
+    "game-9e85e2ff9599ac33.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSkillz.tga",
+      "sourceFile": "newGUI\\source\\game-textures\\9e85e2ff9599ac33.dds",
+      "sha256": "d3795b3e85edc8b327ba54c53c9c20e3b45339a1f3dc27d45751c739604d3130",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSkillz.dds"
+    },
+    "map-5481457c8ab25cc5.png": {
+      "mapIconPath": "BTNNuclearExplosionMagic.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\5481457c8ab25cc5.blp",
+      "sha256": "7f43c7aedb8f6e94ec723da7a4c8b8793e3712ebc4fa431119e0b1ffc77daf28",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-7e4c80c4611bcdd0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionBlue.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7e4c80c4611bcdd0.dds",
+      "sha256": "9b2351c4951e3971869df6d9d3ac2915985caf4af3ba1b9c1562b20b91b0bc7c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionBlue.dds"
+    },
+    "game-1b101ab95583fc0b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNManual3.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1b101ab95583fc0b.dds",
+      "sha256": "9c94e45ca0b14e3b41fbdc1c82d3ed3ade0796733147f27c8af28cb19eca2f7f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNManual3.dds"
+    },
+    "game-8eed1cc91e885441.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBansheeMaster.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\8eed1cc91e885441.dds",
+      "sha256": "12b95ad0d108447edc92d23dee8e858fd0d9a303b1f76cb4d71413680c75454f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBansheeMaster.dds"
+    },
+    "game-0d0c0cc0a6099592.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0d0c0cc0a6099592.dds",
+      "sha256": "3d596c49bb2c188459324d89cf3104fae246adfe8f01b0c40717fbefc245850f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNThoriumArmor.dds"
+    },
+    "game-0d8bea4100bc0076.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWandOfManaSteal.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0d8bea4100bc0076.dds",
+      "sha256": "695f597b7b00a1564c2d6215854e4d0705abe99da978b3b41dfbf5b20c93bb9d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWandOfManaSteal.dds"
+    },
+    "game-322191a5dd8b8a4a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\322191a5dd8b8a4a.dds",
+      "sha256": "ae0090bbe9587e3555ebcbe8c4b2789523dc9072929eddcc40580539af869205",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.dds"
+    },
+    "game-81e719ac14fd0a09.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLightningShield.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\81e719ac14fd0a09.dds",
+      "sha256": "f3e5121468ba57a871b90f10874dd2b9fc87661ebeac3223b41414bd9383a2a2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLightningShield.dds"
+    },
+    "game-1cff0604f5ec8d78.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeepLordRevenant.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1cff0604f5ec8d78.dds",
+      "sha256": "8a8d5bc045fb878ba1098543b3ec688b8b00dff5dfdcb91ee86f832a7ab4447c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDeepLordRevenant.dds"
+    },
+    "game-385edd7213e92972.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRockGolem.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\385edd7213e92972.dds",
+      "sha256": "f45c581021e703f50fdc9069624d545beb7e344180e4be547060be026a00d1d7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRockGolem.dds"
+    },
+    "map-3706984944677b21.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRadioTower.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3706984944677b21.blp",
+      "sha256": "ef81f19500e4c07ceb6e7d469a5578c1b0d01d518b5e388447217d46f99fef14",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-49b0b6de254942ef.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTrackerOrbOJ.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\49b0b6de254942ef.blp",
+      "sha256": "fc5a520bc590df8c8e23e7d706a4776d96261aa700e3dc187fc29fd203782677",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-a749077312beec30.png": {
+      "mapIconPath": "BTNINV_Weapon_Rifle_03.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a749077312beec30.blp",
+      "sha256": "00e2bc89dc76987ac6c78c240f2d88e455a2054e52df262d1e0ccb97dcdece65",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-47fb8b9d09b05003.png": {
+      "mapIconPath": "BTNINV_Weapon_Rifle_06.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\47fb8b9d09b05003.blp",
+      "sha256": "510ab477f9be2a04e044dd2d0f4ca842b22687da2782251531cb2f26c9613bc2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-6ed8cd09e0b29888.png": {
+      "mapIconPath": "BTNPlasmaRifle.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\6ed8cd09e0b29888.blp",
+      "sha256": "5c0e2268c942f4d432c0980bd98b3a0bfef1b02c5154eb7a447c62ad6a85b5f1",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-6a12304e50ee9702.png": {
+      "mapIconPath": "BTNBatteryBIG.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\6a12304e50ee9702.blp",
+      "sha256": "b4890a663ebcb01ba61d39b599d8fe44bdff48cd837b97f4bfb107640fc779c0",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7a09f5b89de90519.png": {
+      "mapIconPath": "BTNTaurenMarineWeapon.BLP",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7a09f5b89de90519.blp",
+      "sha256": "4689d6423a316f686dfb72ced34f4919812ac22da108b0c0e91705ebfc41f225",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-eebd96b67cb38a46.png": {
+      "mapIconPath": "BTNINV_Misc_Bomb_04.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\eebd96b67cb38a46.blp",
+      "sha256": "48afcb2758a769b25c86a9dff27bc90d5dcdda260aaf54b7008f1bb1dcbc7ec2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-a1fde7cd98cbccf6.png": {
+      "mapIconPath": "BTNGaussRifle3.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a1fde7cd98cbccf6.blp",
+      "sha256": "3ffc78ecc5464a4d6f4cc91f93217456adfd480de4ae08c976dc8810222ad557",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-e630731fb686c46f.png": {
+      "mapIconPath": "BTNINV_Weapon_Rifle_02.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\e630731fb686c46f.blp",
+      "sha256": "fc3756abf58b0c690792976935574ea302dddb4604e55bc969443adf1e47d6a0",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-49fc546602295048.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\49fc546602295048.dds",
+      "sha256": "af902ffb247bbd31f161596fe812e2b16844a41976b1371ccdaab288f38b8aa8",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTomeBrown.dds"
+    },
+    "game-45c86c2c2913f6f0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTomeRed.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\45c86c2c2913f6f0.dds",
+      "sha256": "f884888701669b93449df2a0964e350080c476d4bdea3687bc2778bb35049614",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTomeRed.dds"
+    },
+    "game-f9f68461d7d8bfe5.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionOfDivinity.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f9f68461d7d8bfe5.dds",
+      "sha256": "509cc4197a9fc361a75a98695af2fc188942a1f34b6894137a7701f03a789fbd",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionOfDivinity.dds"
+    },
+    "game-f2ca11ce875013a0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNStaffOfTeleportation.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f2ca11ce875013a0.dds",
+      "sha256": "a6f24cca7fbc3be4f604dc48599e456ee2b76a1354c858ced66613806025b251",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNStaffOfTeleportation.dds"
+    },
+    "game-90998eddbe5b88cd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNImprovedSpikedBarricades.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\90998eddbe5b88cd.dds",
+      "sha256": "28b729b8bed6d513bc22ea7b19ac0b13488a6369a34fb559ccf2ab2e65e5b865",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNImprovedSpikedBarricades.dds"
+    },
+    "game-43aaa78fcd9e4c75.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionRed.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\43aaa78fcd9e4c75.dds",
+      "sha256": "b44d5f311a68dfdcb5014db07c355dda0e3a42c30b4c10385a60444af044d770",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionRed.dds"
+    },
+    "game-1e765defd8e05b67.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPriestAdept.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1e765defd8e05b67.dds",
+      "sha256": "b5c228b3b8dd65648d4774ed182f42abc7a1b83711972289d649a15c8e3170ec",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPriestAdept.dds"
+    },
+    "game-998809071b1819ca.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedReinforcedHides.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\998809071b1819ca.dds",
+      "sha256": "50bdd9f04826c9c8dd981fa98210fecf2ed757894f380cd395042937cfcdaaee",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedReinforcedHides.dds"
+    },
+    "game-95e2a3a89f891a31.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNROBOGOBLIN.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\95e2a3a89f891a31.dds",
+      "sha256": "7dc0d6e78ce7e14b8d5778e9949501499a000b6b4d6d6a95c645baaa5ba9daa0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNROBOGOBLIN.dds"
+    },
+    "map-c1ffb1df5213cce9.png": {
+      "mapIconPath": "BTNHeroPowersaw.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\c1ffb1df5213cce9.blp",
+      "sha256": "6cd676bc0da7f93bf1b6bfbc9f5fa6308778426c78bd5e195664dc424f3de331",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-80ddd1f520b250c4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNLiquidFire.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\80ddd1f520b250c4.dds",
+      "sha256": "023747305a023184b93d8c98cb1959c2e7a14b07d28d3272e0a3ad078b3cecb6",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNLiquidFire.dds"
+    },
+    "game-389e2a7707ba01ab.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAncientOfTheEarth.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\389e2a7707ba01ab.dds",
+      "sha256": "d0db4da8d75aa207aabe57b47eabd22ccb6acc01dc3bbcdc190e5fd9b9df8f84",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAncientOfTheEarth.dds"
+    },
+    "game-94b2b3ff380933ec.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDrunkenDodge.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\94b2b3ff380933ec.dds",
+      "sha256": "4e7df10f74fab3ba2e9d6737ab6c40f985d0d510e5de982d7ca600ec3de54b3b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDrunkenDodge.dds"
+    },
+    "game-38a21e54f0194a80.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWirtsLeg.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\38a21e54f0194a80.dds",
+      "sha256": "50511e4c6cc0ca3ada5917446a7090143e24b01d18f3f5627b8b83f2dc2e980a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWirtsLeg.dds"
+    },
+    "game-603f465f9c15b3c3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGoblinLandMine.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\603f465f9c15b3c3.dds",
+      "sha256": "de09ea409689baa3d4aa651a1d70eb91529cbd0e26dc7091feef9a1fae93901b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGoblinLandMine.dds"
+    },
+    "game-af94a37858cdf336.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNExhumeCorpses.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\af94a37858cdf336.dds",
+      "sha256": "69f8aadfac517c14213294b7ff8c77b5e18b2045bd3341a7e508e555f6618861",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNExhumeCorpses.dds"
+    },
+    "map-11fbdf7fbda32e8f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTN_CR_SEGGOLEM.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\11fbdf7fbda32e8f.blp",
+      "sha256": "c2c1002e175f390afade215fa69dc7099f3b5f635036a60e44c75f5daf556ced",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-ba217430e030bea7.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbOfFire.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ba217430e030bea7.dds",
+      "sha256": "9f06fc04c5326d148033b76c84d225863da0d252c00fe9fff97ccb939e5006c0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbOfFire.dds"
+    },
+    "game-ee525a553dae1069.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAcidBomb.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ee525a553dae1069.dds",
+      "sha256": "6f01a5fc518538f2038b4824d38cdba937783a4428303759ff1651555f35f668",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAcidBomb.dds"
+    },
+    "game-f3a9c4e98015d346.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f3a9c4e98015d346.dds",
+      "sha256": "9e9f67ef12bd8ba8a6f769dc0b81aa628166075f869602961afbd4b335a45271",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.dds"
+    },
+    "game-e9e9b33d80993363.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSoulBurn.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e9e9b33d80993363.dds",
+      "sha256": "8876a3b9ed2c1cd9384034d9af51f7b4ad449b271b09a53c6fec28759fdfff95",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSoulBurn.dds"
+    },
+    "game-5227cd7ca753aaac.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNIncinerate.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5227cd7ca753aaac.dds",
+      "sha256": "450347351776d09b80692dd00f6cdc32d554b42d0bd56fc10bda1d1f04e8a2be",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNIncinerate.dds"
+    },
+    "map-ab3619fb874da4aa.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_06.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\ab3619fb874da4aa.blp",
+      "sha256": "1949043364829ba7c53e124ac49e2597ca300e78c2cf19874d33127600220270",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-f3803ae5f6251810.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_07.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\f3803ae5f6251810.blp",
+      "sha256": "d5016e3da62b9ccffb196bd2437440d5d64b343f10b4a723c765dc8fe5303169",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7a9bc280afa98f31.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_01.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7a9bc280afa98f31.blp",
+      "sha256": "9cda4e5e38a6ad9f4b75e4ba09a989bc2f4799e54db8667d2a36e661781810fe",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-93b237bedb7e2256.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_02.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\93b237bedb7e2256.blp",
+      "sha256": "5d0af47b72993a8917a5030c17621ac272e51947f8d60919efecddd98bce66ec",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-6248f5db60db772e.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_08.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\6248f5db60db772e.blp",
+      "sha256": "4b09c973236c163a55adda63658e0dfc5b4bdce61ac603143740ca822a4e6bad",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-d7a2cc2ac5c458cc.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_03.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\d7a2cc2ac5c458cc.blp",
+      "sha256": "e9eca04f02ec41e6e56834dc07efcb056d99d1da0e67c1d8c75eb5b0ac72a967",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-ea3ab3d2a4ddd2f0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSacrificialSkull.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ea3ab3d2a4ddd2f0.dds",
+      "sha256": "744978e2cfc43b43fbb19ce06c7ddb8c829336db75c3547d2392957b653c1b7e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSacrificialSkull.dds"
+    },
+    "game-64589bbff7657a66.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNImprovedMining.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\64589bbff7657a66.dds",
+      "sha256": "67a65f85ac029849fecf3a99537ee06a705bb165f55716cf196d8aeeabd80cd7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNImprovedMining.dds"
+    },
+    "map-04cfd1e3e9292806.png": {
+      "mapIconPath": "BTNINV_Jewelry_Necklace_11.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\04cfd1e3e9292806.blp",
+      "sha256": "a475c65efe90dacfdbf1b0331436648faaf17cb2cf61b5f7a8b95eb3a5c2c63f",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-50a6a370629224b5.png": {
+      "mapIconPath": "BTNEmerald Amulet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\50a6a370629224b5.blp",
+      "sha256": "3171e99ace8a8fe2fb75dd432d1600bc405fd7abdf03b7a46ef16058dd3a5760",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-912d14186456c5d1.png": {
+      "mapIconPath": "BTNDarkmoonPendantDH.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\912d14186456c5d1.blp",
+      "sha256": "84d97b1a107d4284c14cdb39fbab2b2a6dc1acf2831e3b103e68bb1aa5a79988",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-8dc4c6743b83cd31.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCirclet.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\8dc4c6743b83cd31.dds",
+      "sha256": "208418fca445aa2fa7b8962d2d3e1c4770a243d015c480b66b254500c5839bef",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCirclet.dds"
+    },
+    "map-ce14452a2c4d0d5d.png": {
+      "mapIconPath": "BTNINV_Chest_Leather_04.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\ce14452a2c4d0d5d.blp",
+      "sha256": "4674df9fce27841c51992a3b0c8691ae1db6635a756344af54e2253526e33c0e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-28a01ebf68d15456.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRingPurple.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\28a01ebf68d15456.dds",
+      "sha256": "bcab42ff8bd23585ca38b077721d1199e2ea6d32eff081f1f9f6d998ac8d5be9",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRingPurple.dds"
+    },
+    "game-5058ad5e2679c2a9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWarden2.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5058ad5e2679c2a9.dds",
+      "sha256": "baf1a655e95ded086619adea2d3ff1e13b51004c32741fdbc4c6e35b61c35541",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWarden2.dds"
+    },
+    "map-12d8ffaca4bf2578.png": {
+      "mapIconPath": "BTNHarpArrow.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\12d8ffaca4bf2578.blp",
+      "sha256": "d17d91e98f793183d2150eb2a22cb42bb9f67b942951288536bb198fcf99b692",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-31e9a37925008e6f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\31e9a37925008e6f.dds",
+      "sha256": "87f07acc6ae2eb46702221098a480c7809f1d81ac10bc0b67cc94ea911470616",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUndeadShrine.dds"
+    },
+    "game-3e63fb82d6e6d8fb.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNnerubianSpiderLord.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3e63fb82d6e6d8fb.dds",
+      "sha256": "b249a5c558c5797b8470fbad24f8e1a8e478339c533a40c422c0a15bbfb29199",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNnerubianSpiderLord.dds"
+    },
+    "map-0db959a7eda51f58.png": {
+      "mapIconPath": "BTNFire Plate Armor.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0db959a7eda51f58.blp",
+      "sha256": "e8dc5dea7c6a3b83cf9da80b5d3c84db3e8f9d091588946f750ac0d4a9c28f88",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-f4e78540b9b1add4.png": {
+      "mapIconPath": "BTNRobe.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\f4e78540b9b1add4.blp",
+      "sha256": "246f3b6d2ac4fd8bd22f9db053fb03bfa1e5d7d819ab6e37894a17c48686f253",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-9798145fed435bf2.png": {
+      "mapIconPath": "BTNRobe2.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9798145fed435bf2.blp",
+      "sha256": "56d3c8a2b1807aee6bf3becadbf1a86b0dfb9eeede16d8049d362819cac85979",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-5a534057d62b2aaf.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCleavingAttack.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5a534057d62b2aaf.dds",
+      "sha256": "cb92632ce43f0d68253f9cb41acfd86d936d9e82c39a34491f8f43694a3bce21",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCleavingAttack.dds"
+    },
+    "game-aa5958a31fc97dd6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\aa5958a31fc97dd6.dds",
+      "sha256": "fa3c6b0897b3d1cf7f394298b33a29a71f132b23cf93c36779347f394dc8bc70",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.dds"
+    },
+    "game-fe8e39fd3ec1a93d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSorceress.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\fe8e39fd3ec1a93d.dds",
+      "sha256": "3d3da80e8219c535439a88c6c2ab84de54649eda9ce0bc04ab13c42e11dbeed5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSorceress.dds"
+    },
+    "map-90b44109cfdb48fe.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNewFrostFireBolt.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\90b44109cfdb48fe.blp",
+      "sha256": "ea7d5f6f2e644756de9cd435995205fce8ec0dfe06e4dfe8cb3ada13d260b50e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-02f3cd18eb2545b1.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrb.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\02f3cd18eb2545b1.blp",
+      "sha256": "e1ac4cad64f1219386b464241d1b3cf2517ecac387e6edcc0f8715d257e17ce1",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-44ea66365c9d57c4.png": {
+      "mapIconPath": "BTNIndigoLight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\44ea66365c9d57c4.blp",
+      "sha256": "78dc916b7bbb66fd4b8e5cd920bb6e8460dc4bbdf5460ee3d33cda503760afc9",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-18fb60301fbf25e1.png": {
+      "mapIconPath": "BTNPhialLight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\18fb60301fbf25e1.blp",
+      "sha256": "15c880e6ba9a071c9f72340e6c63f4dcf9d41c5fde47cc520ecb3590762fdaed",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-e5b5894c7035e8d9.png": {
+      "mapIconPath": "BTNLimeLight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\e5b5894c7035e8d9.blp",
+      "sha256": "19d1b946fd120f5c381e17d5c9943506c2a13cbea440d4d72c0990fbb665e0bc",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-37edd78f61951ea0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBookOfTheDead.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\37edd78f61951ea0.dds",
+      "sha256": "1c1350ca5abaee9bfb3b8fb5f8e56c94626bbb94a83fc6560514cf41f8786c0e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBookOfTheDead.dds"
+    },
+    "game-d79104789cfbbd2e.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSpellBookBLS.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d79104789cfbbd2e.dds",
+      "sha256": "da283eb8d2d76605ea7987ac833907700b55eaffe5240d581b18fd714d26f408",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSpellBookBLS.dds"
+    },
+    "game-42aa0bd10d36ddfb.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNecromancerMaster.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\42aa0bd10d36ddfb.dds",
+      "sha256": "163d139353b083d41bff61973ada7ec13e4a3727e5985530f6ed9be0580fccad",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNecromancerMaster.dds"
+    },
+    "game-7a8e6fbc01a8fe21.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7a8e6fbc01a8fe21.dds",
+      "sha256": "b39367638cb9da5698b4921f8be4d3e52dc7f488f76f957fde80251ba65ebf4c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSorceressMaster.dds"
+    },
+    "game-27484fc3df1a5bf4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\27484fc3df1a5bf4.dds",
+      "sha256": "f64e001ffc30c56b99604face71c9f4fc141ed56dde0ff00baff979d6801895b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNecromancerAdept.dds"
+    },
+    "map-fe1a551f52d40011.png": {
+      "mapIconPath": "BTNGaussRifle1.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\fe1a551f52d40011.blp",
+      "sha256": "3aaed64159c064146a4ce2497c39a803653e8d3b16796cc4db25fa086a913f75",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7f49f04e1b5dc9e6.png": {
+      "mapIconPath": "BTNGloves2.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7f49f04e1b5dc9e6.blp",
+      "sha256": "8cc55b0a25018f62400a4516696a1dbce5b09764331d49ca13f18a16e7f0babd",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-75e6c87068d09855.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNExpandedView.tga",
+      "sourceFile": "newGUI\\source\\game-textures\\75e6c87068d09855.dds",
+      "sha256": "784ab32efcc7ef22d1b67893d1117db0d81eddd0c7a37f61a0caf82aef37258d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNExpandedView.dds"
+    },
+    "map-8d760a5b885e43f4.png": {
+      "mapIconPath": "BTNLeatherArmor.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\8d760a5b885e43f4.blp",
+      "sha256": "f55b7c15e7461c821192896b8eb08cdae7e45731a0742edc332f8d18f2278e84",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-020e4b1f28ee63eb.png": {
+      "mapIconPath": "BTNINV_Misc_Ammo_Bullet_01.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\020e4b1f28ee63eb.blp",
+      "sha256": "03518ca4963f70a4293b364cbfde093df1e6eff2b3d287e9e5b7a1deaa9ab962",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-ce5a4968d60a2228.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNillidanprisonwagon.tga",
+      "sourceFile": "newGUI\\source\\game-textures\\ce5a4968d60a2228.dds",
+      "sha256": "00df49484ab85d294004a05a101261bce8295df4381c993579a3375a231d5816",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNillidanprisonwagon.dds"
+    },
+    "map-3db7694ae6727835.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSparkFlare.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3db7694ae6727835.blp",
+      "sha256": "e60bedc7ee9b429ad7ee9a63900f386042e9a09f318a88d9e5967ab0375aacb3",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-455538b81f476b3f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\455538b81f476b3f.dds",
+      "sha256": "296e04be2c048793958ad953bc2c177397238b1092d4dd8a694596b8f10b045d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDizzy.dds"
+    },
+    "game-c2497598b3f61539.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMortarTeam.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c2497598b3f61539.dds",
+      "sha256": "51ee41866ea7016b2b4ed37401ab093d7b440e2c93deb6857426dba9e9ac76e3",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMortarTeam.dds"
+    },
+    "map-12dda46921f7fa64.png": {
+      "mapIconPath": "BTNDwarfEnginer.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\12dda46921f7fa64.blp",
+      "sha256": "03d095327a84ddd727bddf74ff40d3b8f9124f21218633fda7ce95c0be5780d6",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-6cb6904fff2e769b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAmuletOftheWild.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\6cb6904fff2e769b.dds",
+      "sha256": "a6451b34780e012db90f95fe9637b2fd7fb008ad0d77d5b22818975fde69723f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAmuletOftheWild.dds"
+    },
+    "map-31e21fcb2694a17c.png": {
+      "mapIconPath": "BTNINV_Ammo_Bullet_03.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\31e21fcb2694a17c.blp",
+      "sha256": "1d66825f3e56531a27039fae4946fb2de7437f50562f14eccb3ea6ce8ca8dae1",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-0cf0c66500cc2cf6.png": {
+      "mapIconPath": "BTNFireArmor.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0cf0c66500cc2cf6.blp",
+      "sha256": "433c5735e63e3044b512adf36b8b9b4ad9ee14437a7f979ee6931455b53e532c",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-57599715cd4f11ca.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGoldRing.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\57599715cd4f11ca.dds",
+      "sha256": "7655e2b00f16470c578baed529925a0dcf9a5abdb887d11c609fd1cf89931138",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGoldRing.dds"
+    },
+    "map-68a4bbd7db3bdf5e.png": {
+      "mapIconPath": "BTNDragoncuttlesclaw.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\68a4bbd7db3bdf5e.blp",
+      "sha256": "755458f92c8dd8761392a83f0f0d10463477e73bb605772ced9f1f7ab5faa739",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-b06760cabeae89a7.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPeriapt1.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\b06760cabeae89a7.dds",
+      "sha256": "e353e384032bb8c30ced28f75c6293f537c548207a529fd898dd282034e11eb0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPeriapt1.dds"
+    },
+    "game-1c1a966bb6dc7b1b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNStoneForm.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1c1a966bb6dc7b1b.dds",
+      "sha256": "2e48a50c423a4e7159850b022ef590d9c899c5c6c80d690ec880e3501026e86f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNStoneForm.dds"
+    },
+    "game-889ec3b503a9c97b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDemoness.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\889ec3b503a9c97b.dds",
+      "sha256": "0c44cb94e99c17cf71dbf5ad6f75dcc8712850e2bf911d13cf0a4d5735ba2572",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDemoness.dds"
+    },
+    "game-7ec81166357c481b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSpellShieldAmulet.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7ec81166357c481b.dds",
+      "sha256": "adef392270910b50363b3194731d3bfdc8f31e156daef5173ebc7f08a35945c5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSpellShieldAmulet.dds"
+    },
+    "game-9c27723ae7baf9d2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRingJadeFalcon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9c27723ae7baf9d2.dds",
+      "sha256": "6df8e0c8db45286d9496aa599e5b38851bbe1237ae6ceab5ab642ba8b63eb6e9",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRingJadeFalcon.dds"
+    },
+    "map-cf102cf4948aa41e.png": {
+      "mapIconPath": "BTNINV_Weapon_Rifle_07.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\cf102cf4948aa41e.blp",
+      "sha256": "b30ab1a35bbab6d601b3d4655e059d3255ec83eea06f47dfb27322c6383a0742",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-3ff5058f1093bd62.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGoblin Assault Tank 'Gazlowe'1.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3ff5058f1093bd62.blp",
+      "sha256": "57e3bde4e0defd813227f4964fcc52fcc9e1874390a184ad3c48fdb6882c6403",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-a860c3d37ed2fdfe.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRiflemanBurningShot.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a860c3d37ed2fdfe.blp",
+      "sha256": "4ea563f863c31e3eee865bfb791b8a84004c44e46c0cb36592821cc71a05db1f",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-2ccbb6c4cef19b82.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFire Meteor.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\2ccbb6c4cef19b82.blp",
+      "sha256": "d81c6f928ff8fe429bb41195b676c0faba1af1d2840e9937d0dd77defdb83735",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-3a660d0128133140.png": {
+      "mapIconPath": "BTNCR_Spiked_Armor.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3a660d0128133140.blp",
+      "sha256": "9d2bcd60a331936320a6dd58a35186e69af96389b7159dcb1cb7841bb797b0af",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-73ac2da0e8a8ac56.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCripple.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\73ac2da0e8a8ac56.dds",
+      "sha256": "b0d3c9aa872b03c537fb3415d02daeaa7cfa5b180806e3291ae88c9ef63a3aa2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCripple.dds"
+    },
+    "map-80cad8ffe45e6cdc.png": {
+      "mapIconPath": "BTNFireSwordRed.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\80cad8ffe45e6cdc.blp",
+      "sha256": "90be8db0235d7aa4d2f33ea2a6c4ef9745e0077d9bbaf76a3285ddb1f443233a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-8c6094f9565819f2.png": {
+      "mapIconPath": "BTNJadeBoots.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\8c6094f9565819f2.blp",
+      "sha256": "01e8cb0c65e1c7ec74d4ad0ddaaba3a2c85f7deabcf5d6ad48e41e325f52f4a1",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-454954c2cd2a37cd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFelGuard.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\454954c2cd2a37cd.dds",
+      "sha256": "f6bf2160c2856fbcc4c286394c49c0444355743808b7035bf9cdabb96352b7b5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFelGuard.dds"
+    },
+    "map-90c8a52cbcbafbf7.png": {
+      "mapIconPath": "BTNBeamsOfLight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\90c8a52cbcbafbf7.blp",
+      "sha256": "9e6031fc8ea525e5d2683648e6c644991e0d88b6ccf5faed395cce9811a27faf",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-0d252ecdeb09baae.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMassTeleport.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0d252ecdeb09baae.dds",
+      "sha256": "3a8b2f1cb1a2fd495b0ec05032aa20d1a1d103e4d1aa7efc7e3b639aff693f6c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMassTeleport.dds"
+    },
+    "game-9cb42cb89b0c0560.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNStrongDrink.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9cb42cb89b0c0560.dds",
+      "sha256": "ab7ec2733f192825f32445d8ac522b4080948730a79be1ad5c0fa9886e962a94",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNStrongDrink.dds"
+    },
+    "map-8b42596b5f09e2f2.png": {
+      "mapIconPath": "BTNGoogles.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\8b42596b5f09e2f2.blp",
+      "sha256": "6607b06625af18a286c80e9b46b25eed4f8b1076687c1072821d81cb0901ccdc",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-bbe602d72182a2f6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\bbe602d72182a2f6.dds",
+      "sha256": "87e6b3c7b73691a7226f8e94b9d64411075e82b9d36da6a5d4effd7ffd8e83f0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNInfernalFlameCannon.dds"
+    },
+    "game-865a610c1230c6db.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHallOfTheDead.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\865a610c1230c6db.dds",
+      "sha256": "44d0c020c5a4defd75109bce2e44b854e2b60e08e1081a8fac32fdc472e25bf0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHallOfTheDead.dds"
+    },
+    "game-f8123329ee824418.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUrnOfKelThuzad.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f8123329ee824418.dds",
+      "sha256": "a95be56cfc90c46419af083e4a85067a9bbb38ad9547c25e56c3b1d6fbd4056f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUrnOfKelThuzad.dds"
+    },
+    "map-2871c3455f26387b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSpeacialCostumeIcon.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\2871c3455f26387b.blp",
+      "sha256": "b6a90112b588991c37f9be2e069682b4cdb6ef2bf5921e15fe3b048c31e51769",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-f1fcc8b342392e4a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f1fcc8b342392e4a.dds",
+      "sha256": "3869b10a87d283c547c5bc7c3819d6832954244db3556e0752ac3002586a2b15",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArcaniteArchitecture.dds"
+    },
+    "game-51c782ba67e21e0b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNVialEmpty.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\51c782ba67e21e0b.dds",
+      "sha256": "63c996057f400d6c13b8e85ac6b95cf1ad9668f4d1578204606d02ed6ea3bac2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNVialEmpty.dds"
+    },
+    "game-f5f9ea0348d59dee.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDarkness.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f5f9ea0348d59dee.dds",
+      "sha256": "b2807dc46e0a998393f80ab27d636c2d5c4b5ce861cff7d637980ea65cb8ab3d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbOfDarkness.dds"
+    },
+    "game-ea8c94aaaa972e8f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNInfernalStone.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ea8c94aaaa972e8f.dds",
+      "sha256": "7017622cd557b93fb003cb75485c26e1ac33592146b4e35ed884b540d833c6ad",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNInfernalStone.dds"
+    },
+    "game-d99b154341da60a2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSpellSteal.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d99b154341da60a2.dds",
+      "sha256": "974edef04bc725bd9c572dfac60b3ead46064a8462b8b7966b988be29db0fd16",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSpellSteal.dds"
+    },
+    "game-dd6de1c744752c91.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNClusterRockets.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\dd6de1c744752c91.dds",
+      "sha256": "27e0721c9625a2c303d064c89e603c262cc4a46de5d97cd529db2644a489d17b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNClusterRockets.dds"
+    },
+    "game-7cd18d61241d7cb8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedCreatureAttack.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7cd18d61241d7cb8.dds",
+      "sha256": "f7167fc36041c68276259e04a7bfd01d78def34cc989fde36112cbed1f4a3454",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedCreatureAttack.dds"
+    },
+    "game-956d9399253a382c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNImbuedMasonry.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\956d9399253a382c.dds",
+      "sha256": "449b1da4f0e3d22e484131a3a828a717a28962df41ca525b1d7f8e748fd45502",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNImbuedMasonry.dds"
+    },
+    "game-fe24539de05fde5d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNVialFull.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\fe24539de05fde5d.dds",
+      "sha256": "1a5864f4c9206a7edd892afdd437977bff2bd4c1575fb156c47df0695faa65f9",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNVialFull.dds"
+    },
+    "game-d9036f1ce9e25aad.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUsedSoulGem.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d9036f1ce9e25aad.dds",
+      "sha256": "07103ad8dc21d2a30cc6c5f2fbadd74b30c384a0ad6e39b69d3ee187ca9687c4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUsedSoulGem.dds"
+    },
+    "game-670b20955ec111d8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNInfernal.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\670b20955ec111d8.dds",
+      "sha256": "6118212006fc1b2f5b8c40bff3700a1987976b6bd86e58268bc32e9c2bfd48b6",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNInfernal.dds"
+    },
+    "game-186b6066627ef357.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNControlMagic.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\186b6066627ef357.dds",
+      "sha256": "19b067636932faac98e4939f7ab97c61312a27e512261af80acc1f9ca9b9ea81",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNControlMagic.dds"
+    },
+    "game-7e7dc0dd36cf7ef2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp3.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\7e7dc0dd36cf7ef2.dds",
+      "sha256": "230b3d2a77761fa9f5cda098952f5341921197b37bb408ad10f2d73c6348a43c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNagaWeaponUp3.dds"
+    },
+    "game-2182137deb27a22f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\2182137deb27a22f.dds",
+      "sha256": "fa97a9ec35aa1dfe8335e22955c337285fd0b6239647736ec49e0be70d6ea886",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionOfRestoration.dds"
+    },
+    "game-2d72c6a04dfee8ab.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAncestralSpirit.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\2d72c6a04dfee8ab.dds",
+      "sha256": "dd6f68c5b4e0ecc851852522809b9641751416d86d79696be56a4c31f1bb19ed",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAncestralSpirit.dds"
+    },
+    "game-de99195fb22df23c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbOfFrost.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\de99195fb22df23c.dds",
+      "sha256": "688b4f31e8731658c8195e44cc57aa19a59182e95772a06dec061647bb4fbd18",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbOfFrost.dds"
+    },
+    "game-a4aaa894fae7a8a2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbofSlowness.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a4aaa894fae7a8a2.dds",
+      "sha256": "1005859ccd27f149e64155c7abcfeb37a5fb64097426eee2a2fc154688042b48",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbofSlowness.dds"
+    },
+    "game-41e4a27b0c053abe.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPotionOfVampirism.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\41e4a27b0c053abe.dds",
+      "sha256": "db86b3c4ba2ce5df12d8f1cdf8433c2490ec38b31add04e402d488fb39a95a2e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPotionOfVampirism.dds"
+    },
+    "game-1ec5cb33dc2bb889.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDisenchant.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1ec5cb33dc2bb889.dds",
+      "sha256": "ef58d155370cfbc9683b94cc3f683a3c953a266150bbc5a2fe34ea38754c9f13",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDisenchant.dds"
+    },
+    "game-cb84afd4b80af6d1.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cb84afd4b80af6d1.dds",
+      "sha256": "45cc8dabcb3d553597e6399d207654f2af135d0f32b6d2116280a3b05a7fd5d1",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbOfVenom.dds"
+    },
+    "game-f414948c803c4347.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f414948c803c4347.dds",
+      "sha256": "a97b3e5ece448dbab8a884105b3f179238ac56498aa86c20c3aa981a7abf7843",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.dds"
+    },
+    "map-4fe705cb0e69395a.png": {
+      "mapIconPath": "BTNPhialHell.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4fe705cb0e69395a.blp",
+      "sha256": "8c7bafa7083aa56c1c9eaf61edf725da79981aee4befefdd0e5a7c8df16f03d7",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-720d0d0b94328f07.png": {
+      "mapIconPath": "BTNIndigoHell.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\720d0d0b94328f07.blp",
+      "sha256": "12a4d13222a318be5f79d711cb25b05959748aaf341f256778d8df1e772b6abb",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-24e8a353edaa6608.png": {
+      "mapIconPath": "BTNLimeHell.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\24e8a353edaa6608.blp",
+      "sha256": "56fe78c7bed764010ffec0ee2ed47a6b76e7bb6154daf04ec9a229ff51f701d4",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-798de8662d511b8d.png": {
+      "mapIconPath": "BTNPhialObsidian.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\798de8662d511b8d.blp",
+      "sha256": "eda1b29cdb973b5a3577f92a31954219b26b8fa3f681df3610a7ba1192229b67",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-9a3b3479984e945b.png": {
+      "mapIconPath": "BTNIndigoObsidian.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9a3b3479984e945b.blp",
+      "sha256": "4301b81b8c4a7c40e4c949f5db344b456a21c11d5afd6cc8b248111f2b2dcb3e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-390d9c303f80c02a.png": {
+      "mapIconPath": "BTNLimeObsidian.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\390d9c303f80c02a.blp",
+      "sha256": "c8e4c77e5983309189762b11b30f11715ed8d23774b629a7aaaef43a818f34b2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-2eb25b166e19d410.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNQuillSpray.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\2eb25b166e19d410.dds",
+      "sha256": "731bde33f0daaa00e41dcb5bb8b5a0e6c347b6b63c948e902e7cdb3e0a3f5bf0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNQuillSpray.dds"
+    },
+    "map-75042f7a8bc458db.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDemonicNecklace.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\75042f7a8bc458db.blp",
+      "sha256": "cceea74fddf8941771e58186e8a72f7e0dd5c5727f1ae86444f96b74764616b2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-9d8ffe0b51dcf140.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBelt.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\9d8ffe0b51dcf140.dds",
+      "sha256": "4a88ea037151884a0b4f524e6ed5f12bd78cd172df4b94d6e5e01c90091095f2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBelt.dds"
+    },
+    "game-960d029ca0829aaa.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWandOfShadowSight.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\960d029ca0829aaa.dds",
+      "sha256": "9fa12a5eb17c1cf8f6034f0cb91de683e6a0c77b86dc0f604ea268e9b762ebbe",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWandOfShadowSight.dds"
+    },
+    "game-419f894f2f28af33.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\419f894f2f28af33.dds",
+      "sha256": "f364574c0eceab4ddf444cd76fa732e5ee11d32ad648436842e78baaa44320b7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWandOfNeutralization.dds"
+    },
+    "game-d1e71da1222aa057.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGhoulFrenzy.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\d1e71da1222aa057.dds",
+      "sha256": "9a1c92d92f0dae7bc50a185ce541233609f1a860ede603b8f17913d733e8207e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGhoulFrenzy.dds"
+    },
+    "game-746f21218561a5f4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedCreatureCarapace.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\746f21218561a5f4.dds",
+      "sha256": "8a7309db747b8717079345a6fc4d14d1a5171aeb1919846f2ed4277e77c864e7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedCreatureCarapace.dds"
+    },
+    "game-06c8f9ae12273af6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTichondrius.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\06c8f9ae12273af6.dds",
+      "sha256": "9e78757484b6ec5adb57b98156a9b2873e8579f1f1aaab86caaf1698e049dfde",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTichondrius.dds"
+    },
+    "game-28f6be703fa260bd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCorpseExplode.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\28f6be703fa260bd.dds",
+      "sha256": "00407c809eee0472d32a5400537cbadfc71c0fac3833b2cbb4effba5257d1e01",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCorpseExplode.dds"
+    },
+    "game-ef4038f821177ba7.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSentryWard.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ef4038f821177ba7.dds",
+      "sha256": "bf5e42a0cb1bea750b567b8f764d286e2ae870a01c4c4005a2e0f3076cfefe17",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSentryWard.dds"
+    },
+    "map-6d362a0a2659eb3d.png": {
+      "mapIconPath": "BTNEyeMedalion.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\6d362a0a2659eb3d.blp",
+      "sha256": "48652386147dcb68d4eff3ddece284d886e736eefbcbe881ee3431201e004423",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-180968a4bed3d03d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWitchDoctorMaster.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\180968a4bed3d03d.dds",
+      "sha256": "8c8ae180dcf9fee65b43bcd6cdbb5dad571889d5d97866c30f902cbee775d28e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWitchDoctorMaster.dds"
+    },
+    "game-db437bfdba337138.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNManaFlareOff.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\db437bfdba337138.dds",
+      "sha256": "94eabb3a690eae3754a7a75d897ffb79a641173a96e925c346385813745460b7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNManaFlareOff.dds"
+    },
+    "map-adeebf9c340a3b25.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNInner Impluse.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\adeebf9c340a3b25.blp",
+      "sha256": "8652fc10b807289014c74163fa343cc2c476213a66a131b42a891f111ccd9aa0",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-a260f2f57a1f74a8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\a260f2f57a1f74a8.dds",
+      "sha256": "914d5396921fa341cbeced2019eb5285f6331b6c11ad62a3e661bf58fc8308a0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.dds"
+    },
+    "map-234cd9d264745d7e.png": {
+      "mapIconPath": "BTNFairyDreamSword.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\234cd9d264745d7e.blp",
+      "sha256": "0ae9a3d3aaed9567d001b87efdee35636d5c8f29920546795565f7db569e576c",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-42330fe32fa759d2.png": {
+      "mapIconPath": "BTNFireSwordBlue.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\42330fe32fa759d2.blp",
+      "sha256": "b3cdfe619e3e04fa2b54af451bcd4c82f132c68912d46b68b7ad22285e67951c",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-cb61c1854378925c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNShadowPact.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cb61c1854378925c.dds",
+      "sha256": "0b7a70a0f92d09a9c303efcc516fb88afb53f43ba379c8439a82ff384ef38a27",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNShadowPact.dds"
+    },
+    "map-9223fa3148d227c3.png": {
+      "mapIconPath": "BTNANA_DemonWindwalk.BLP",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9223fa3148d227c3.blp",
+      "sha256": "6d20153760bbd7c97169da15ce3852905f6b8f45a6a3b41a9639112515a3b16c",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-907a9305feb1ae0a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFrostArmor.blp",
+      "sourceFile": "mapfile\\BTNFrostArmor.BLP",
+      "sha256": "27c8d08849defc7ddc1f8a4bff7749e3302793616cf0a9b225ab32954a2fe52c",
+      "kind": "map"
+    },
+    "game-c04986b2698b7e2a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNShamanAdept.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c04986b2698b7e2a.dds",
+      "sha256": "e4b6ac6105d7ba7a023dc5c8fe8b4d28ed2eb3dd74501c9f787541df187c185c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNShamanAdept.dds"
+    },
+    "game-617f3fd6ac2efb59.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDragonHawk.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\617f3fd6ac2efb59.dds",
+      "sha256": "da0326d878a8109bbd61fcdb4a241363190cff1334067c2ee98f576dedda6891",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDragonHawk.dds"
+    },
+    "game-39caf317fd15b0e4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCorruptedEnt.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\39caf317fd15b0e4.dds",
+      "sha256": "f1b942d40aafb4fb133660d552dc64cf4554d3fdc40f922b1a73ec1d3ccfdb77",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCorruptedEnt.dds"
+    },
+    "game-aa52d429cd9a68e2.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\aa52d429cd9a68e2.dds",
+      "sha256": "805f56549886f3f85d54665363e2ccd9feeb6f9b1ea7cc9ee0deb2a06bc5fc7e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.dds"
+    },
+    "game-fa64a547c2c1eb5d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFelGuardBlue.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\fa64a547c2c1eb5d.dds",
+      "sha256": "468a4a9027b06e9c186d037201c53efda5cfb8ed1adb535a3315a2611b106be4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFelGuardBlue.dds"
+    },
+    "game-4a5786dfa9156656.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSearingArrows.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\4a5786dfa9156656.dds",
+      "sha256": "602a0293f085e8e732bf378d1f3f796e86f7a09c7a76727faa68b3ec40ac6e4d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSearingArrows.dds"
+    },
+    "game-325e056afb87b678.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEredarWarlockPurple.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\325e056afb87b678.dds",
+      "sha256": "f9a3223ca4f9dc53baed4a6726066ce87518dcd0eb65044982f6cf24c0220897",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNEredarWarlockPurple.dds"
+    },
+    "map-a04cac0bf0541323.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRingOfFear.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a04cac0bf0541323.blp",
+      "sha256": "9b323150ba97fe2fdba5001752d246fff6478637758fdfd138003e879385b3d4",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-e65369923186a913.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDarkFrag.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\e65369923186a913.blp",
+      "sha256": "b99e5daf23993a0f00febeefa0e4f04466823cbbe334332bacf22674fe0867fc",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-610579fb489d68bb.png": {
+      "mapIconPath": "war3mapImported\\BTNPureFrag.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\610579fb489d68bb.blp",
+      "sha256": "2f7d918a8ecffc7f429cf85168feeab11e64cbdedc2b8cd8749405cadbdc2206",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-580fe2ec200192f3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\580fe2ec200192f3.dds",
+      "sha256": "8ede1e8e4db211edf664483515e30b5e7188761d7c47b47a90d11183734f3b8d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNEnsnare.dds"
+    },
+    "game-cf4fdbaad61f9778.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHornOfDoom.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cf4fdbaad61f9778.dds",
+      "sha256": "932dff81c346b67f843c7961e9f4ff915709f3becfcc1551af82d677dbe08a9e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHornOfDoom.dds"
+    },
+    "game-51eb21312d14099c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPipeOfInsight.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\51eb21312d14099c.dds",
+      "sha256": "9be0f33f17b50bec36b891f8853770dd2e9b0689446877b46c445cabfa60f8e2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPipeOfInsight.dds"
+    },
+    "game-e06d75858f79dc47.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e06d75858f79dc47.dds",
+      "sha256": "52ce6d976351402d15ca536465be437da3fe28848fab48b9aacf1668a8d1135e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWandOfCyclone.dds"
+    },
+    "game-136d3a6e490495a8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGoblinSapper.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\136d3a6e490495a8.dds",
+      "sha256": "953658603591a237517561423b97cf006dfac4b7d7d9081d1fb98646596962d0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGoblinSapper.dds"
+    },
+    "game-0184a9cb2e5bac28.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNStarWand.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0184a9cb2e5bac28.dds",
+      "sha256": "57b71f7e70d6bc1d13cd5e9c2f81880eb58f7f78b711aaeab388c8e0324ed196",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNStarWand.dds"
+    },
+    "game-201b678a8d8c5c3f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\201b678a8d8c5c3f.dds",
+      "sha256": "a150519701b269bb17ffc5a2008e07af7b138f9c6e08c2b294e1adbaef1f9e0f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNVoidWalker.dds"
+    },
+    "game-36b7069726cb87e9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAntiMagicShell.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\36b7069726cb87e9.dds",
+      "sha256": "87b3d569790c5acaed10ff3f4c5f9cf92d6c4dcc54f939c5cec4c7766c29c4c5",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAntiMagicShell.dds"
+    },
+    "game-4d9ceba59d0a7dcd.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMagicLariet.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\4d9ceba59d0a7dcd.dds",
+      "sha256": "04ed03bb8c0bd190c97e6bbb424d0a74974971271e102cd618c5fb9bf7948984",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMagicLariet.dds"
+    },
+    "game-02ce378004d18bb0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedStrengthOfTheWild.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\02ce378004d18bb0.dds",
+      "sha256": "8394dc8944b8b2996ae4058a909f5144460503a28ba0264f9c56e75ea2dfd984",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAdvancedStrengthOfTheWild.dds"
+    },
+    "map-4210b2ec05a2e0d6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBoots.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\4210b2ec05a2e0d6.blp",
+      "sha256": "45f183bda7d758b6c8c471bf885a0f8fd499ff554016b6cd1817c64be3dc3a40",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-ca56652d95a1f57b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNIcyGhost.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\ca56652d95a1f57b.blp",
+      "sha256": "6e3a088d7d747b9bc3bd5f392de20dbe5a3b303933a87e095c01eb4eaa78eb36",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-229e0c50ef8f95de.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUpgradeCannonHuman.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\229e0c50ef8f95de.blp",
+      "sha256": "ebd4a132c7462d392c34147d6f233feaf5aaeb0c90988edf561d27ad5a76c1b7",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-e3cf95ca72bdc4df.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNStaffOfPreservation.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e3cf95ca72bdc4df.dds",
+      "sha256": "9acfe50a8ac3c1c6396560f535761cabef52a57fd999a1c6db8478d4f6f4c9b8",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNStaffOfPreservation.dds"
+    },
+    "map-61f31859082ff3a0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEyeOfVertex3.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\61f31859082ff3a0.blp",
+      "sha256": "842067ab4d9df35b8e60f4b3baa27b8ac316eea91343fe864ca2e8d93fe5833b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-1e2640aee82776d4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMeteorStorm1.BLP",
+      "sourceFile": "newGUI\\source\\recovered-textures\\1e2640aee82776d4.blp",
+      "sha256": "b7dc9392debabe53a48241c01bd999db86e412f21895656a60420df53045ac14",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-c44f32d45a6d9ac5.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNManaStone.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c44f32d45a6d9ac5.dds",
+      "sha256": "923dcd90055de03eda7e83fe559ee01f98142fe92e886dbecf3986dc79deeab4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNManaStone.dds"
+    },
+    "map-89418557ba291a79.png": {
+      "mapIconPath": "BTNSpiderFangDH.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\89418557ba291a79.blp",
+      "sha256": "79476f8fcb603b8af484c022c9c3c5253a035938cd9f5041ac0ca1e2d1c726a8",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-b46ab641a39ddbc9.png": {
+      "mapIconPath": "BTNChainsOfDarkness.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\b46ab641a39ddbc9.blp",
+      "sha256": "aa931677d43cdc0748f267a30acb7f3415f1295d6aa196938fb49d12b2a46e60",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-586d0978215d667c.png": {
+      "mapIconPath": "BTNSatara.BLP",
+      "sourceFile": "newGUI\\source\\recovered-textures\\586d0978215d667c.blp",
+      "sha256": "cc0b8e1703f631853505df01e3ee55b28c63eb68f856ac8f3acc5dbc353c07a6",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-4940e96187119428.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHornOfFog.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\4940e96187119428.dds",
+      "sha256": "b2504dc7ef10bef51dd8e585dada7c90dea208d7ebbd672b684addbf8b8ca107",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHornOfFog.dds"
+    },
+    "game-6e4749a664255925.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDranaiAkama.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\6e4749a664255925.dds",
+      "sha256": "b8dcc37d5ecaff1a5f5d2cb18b77510845d39039278568cb9934e519bee0e536",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDranaiAkama.dds"
+    },
+    "map-9f4f1094fe1bed60.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDivineInterventionDark.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\9f4f1094fe1bed60.blp",
+      "sha256": "15d18155ff0fae1049c104c7439f052236ad845ca4ba169f4f2ceeed8bfa30b9",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-8a71f99c9c0696f8.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBearBlink.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\8a71f99c9c0696f8.dds",
+      "sha256": "b6ecab02e17eff845f58d38ffe7aca8971551cafdfab3fca1a8080059ed15bd2",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBearBlink.dds"
+    },
+    "map-bba2f866ef0e9fc1.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBlackNothing.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\bba2f866ef0e9fc1.blp",
+      "sha256": "f005965d57140f4f6faa68dcde2e7e19b9fd34cfbb28d1c5620500be01f8b8d5",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-3b327e6f25afc2c6.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNManaDrainGlasses.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\3b327e6f25afc2c6.blp",
+      "sha256": "f7e5330fe542262340780028ef344dac2b3f8768b102a36c15212794f7550f1e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-fac409f3bf301742.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTempleOfTides.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\fac409f3bf301742.dds",
+      "sha256": "b8f8228a8eec1f06842be9a511b6d9fc398372106ac8a551f0b13c1d0b90c0b4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTempleOfTides.dds"
+    },
+    "map-b05d113e65822d56.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAdvancedCreatureAttackRed.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\b05d113e65822d56.blp",
+      "sha256": "9ee24d6911699c24c145e5f239030ef8266fc4a1880c62fbadf14d29b45070ba",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-e33285c0709a6894.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMoonStone.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e33285c0709a6894.dds",
+      "sha256": "013ecb536ae43987f782d23cbb6fcf88a64443b33fed37af938b06f7c28d8479",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMoonStone.dds"
+    },
+    "game-188c108af3612634.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNThunderLizardEgg.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\188c108af3612634.dds",
+      "sha256": "c949326a9b9439a7e3580d4e9565cdeeeac6db33a8fdd2a1afede9b83dc5be20",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNThunderLizardEgg.dds"
+    },
+    "game-3ee6a34c3e45558d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3ee6a34c3e45558d.dds",
+      "sha256": "9891e7c87462c2cc94900f3b4e5b96143a169f90c80dbee8bf00cb455f81b6b7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHealingWard.dds"
+    },
+    "map-67e9d1dd5713be69.png": {
+      "mapIconPath": "BTNChain_Impale.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\67e9d1dd5713be69.blp",
+      "sha256": "7d6602be416b316f67c0c69cbdd07e13b181cd1ea798e20a4675ae6eff992a3d",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-c3e12915ba41109c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArcaniteMelee.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c3e12915ba41109c.dds",
+      "sha256": "54c0d47cb33e56668ff3ce89ba9a5c466130931dcaff596449afe90869b6026c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArcaniteMelee.dds"
+    },
+    "map-63acde25fd75edc0.png": {
+      "mapIconPath": "BTNDragonHuntersHelmet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\63acde25fd75edc0.blp",
+      "sha256": "a09eb182c32d75fc1498d3e41695186a24e7aaaa50f85a8a20de23f714521605",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-1a0b8b8d66e6a028.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAuraNuke.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\1a0b8b8d66e6a028.blp",
+      "sha256": "dba1d1ac717a45944c599690480217db21c31abd60f3ff5e3ea328168f40001d",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-393c4ca4bf153ac0.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\393c4ca4bf153ac0.dds",
+      "sha256": "dd90279ee0fa2b3bc1cf96c3739ec8f5d445a4ddc78acce4f3da923cc8851453",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.dds"
+    },
+    "game-ceda4119c9ee4d73.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSpellBreakerMagicUnDefend.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\ceda4119c9ee4d73.dds",
+      "sha256": "f9d4b4b55ff227df43f9726e6181526990dfa07a8fe3cc151285df5b2496ef55",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSpellBreakerMagicUnDefend.dds"
+    },
+    "game-88040a570404be29.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFurbolgElder.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\88040a570404be29.dds",
+      "sha256": "92ac3b29b52705160dd7c933ec1198258df57c11323c2ec18f307954d155d778",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFurbolgElder.dds"
+    },
+    "game-74ce33b416d70c76.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\74ce33b416d70c76.dds",
+      "sha256": "723ccf4d93f17ccbecf1e49dc1e2323c12c65db2b2015e5df2ba6c79649c502d",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNForestTrollShadowPriest.dds"
+    },
+    "game-577d4aaabde1cbff.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNVorpalBlades.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\577d4aaabde1cbff.dds",
+      "sha256": "be5dc21fb6ed3b3ea1a3d9e6572ea23fb8af9e9981c6cf09f604662fb7f45cba",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNVorpalBlades.dds"
+    },
+    "map-209726b9e4e90751.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNEyeOfRavager.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\209726b9e4e90751.blp",
+      "sha256": "28f38c65d080092a7eea501dc147d58112a1ad58eb6b3b4eb400f19a28c577c7",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-57d233a812869533.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSilence.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\57d233a812869533.dds",
+      "sha256": "5c591d6cf59ac89a453ed4e2a4051c27f9308714a5dbb58846205e39061fed48",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSilence.dds"
+    },
+    "game-efe371c63e49fafb.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDoom.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\efe371c63e49fafb.dds",
+      "sha256": "1bf5a9facbcfcb7568b2d84451daa7a98e035832cdb8efcdf1b539a669952fa7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDoom.dds"
+    },
+    "game-82ab7eb507fb9441.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAltarOfDepths.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\82ab7eb507fb9441.dds",
+      "sha256": "a20eac4404f7906bd659d768f505947481bf7eebadd1e0ef593f6c07f9fcb56c",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNAltarOfDepths.dds"
+    },
+    "game-cf48b2795e5dd2a9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNNightElfBattleCruiser.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\cf48b2795e5dd2a9.dds",
+      "sha256": "4e2f9cedb829d541a822e81f4d2436870c56479f41e62e288c9cd282fe9f3b97",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNNightElfBattleCruiser.dds"
+    },
+    "game-1cd4dbb44a0f3919.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGlaiveThrower.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1cd4dbb44a0f3919.dds",
+      "sha256": "c368398aeddbaafa39de584d2cdda25c69f174c69c9b0b0c8e548b33c000fa9b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGlaiveThrower.dds"
+    },
+    "game-97ecd6b09fd1f60e.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNZigguratUpgrade.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\97ecd6b09fd1f60e.dds",
+      "sha256": "1d9366736d68ea5a7a3fd52f969d0477e51b22780cd711ae82ea5f3b2986a7ae",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNZigguratUpgrade.dds"
+    },
+    "game-1ffe295a996a0829.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1ffe295a996a0829.dds",
+      "sha256": "e679b38c5eabcf253034e703f855b80519df0ee480aed6533349b37ccc20c15b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHumanArcaneTower.dds"
+    },
+    "game-27eb360f9dcd80c4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNUndeadBattleShip.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\27eb360f9dcd80c4.dds",
+      "sha256": "ec62f6c9c67f4beddd6b742b26cc90ad87522b0afb2e60c82e9fe16edded3f4a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNUndeadBattleShip.dds"
+    },
+    "game-e35f0ba3c3ce5fef.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNFireBolt.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\e35f0ba3c3ce5fef.dds",
+      "sha256": "227b45d0b453ea269d842ac939cc374e02c4b0ac870bab34719c723e74df8a1e",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNFireBolt.dds"
+    },
+    "game-94bf66cfeeebebc9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArcaneVault.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\94bf66cfeeebebc9.dds",
+      "sha256": "1af605bfc93727b4d455b78dab772ed537833c6fdda205daefc196f1dd346ce3",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArcaneVault.dds"
+    },
+    "game-35ee866eed2788ba.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNGreenDragon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\35ee866eed2788ba.dds",
+      "sha256": "47064d1d43bfc5dc1551b30842c513c97745a31b4a827c05eb55a42de56afa83",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNGreenDragon.dds"
+    },
+    "game-0ff438d0df46d519.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRedDragon.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0ff438d0df46d519.dds",
+      "sha256": "ceb0a631676630ccc879398212649c03dc049a5f42e9c386c0520cae349ab80a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRedDragon.dds"
+    },
+    "map-27578d37fd403b34.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDraconicCostume.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\27578d37fd403b34.blp",
+      "sha256": "2a2cb21e798497c5d01b54975719b635a7e7e2afb10579b3efd84528301d1f97",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-099ad772317a4342.png": {
+      "mapIconPath": "BTNINV_Helmet_09.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\099ad772317a4342.blp",
+      "sha256": "d9600a58c39158878f2f46fc9e2f56fffa96be6fb46c19f6efbdf9ea264e60e8",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-0f9075b4a251e93a.png": {
+      "mapIconPath": "BTNINV_Crate_06.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0f9075b4a251e93a.blp",
+      "sha256": "183125b680a303c6ba58481f8d89d61487a1e4b94a4aa349acc492bb6c210e9b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-0c2a2a0c4038fd0f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\0c2a2a0c4038fd0f.dds",
+      "sha256": "8bdfdc3d93f1c7deaf1f3cdb7795d454006d606d05a8690c3b3561b3a37c2ef0",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNHeroAlchemist.dds"
+    },
+    "game-1caf87b2c2c52d91.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNArmoredOge.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\1caf87b2c2c52d91.dds",
+      "sha256": "c1e32d6a2ba8ea61db59053df588688e9f2945484543f6806bf24f5bfe7d6cbb",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNArmoredOge.dds"
+    },
+    "game-612cf92b0e02fd1d.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNMageTower.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\612cf92b0e02fd1d.dds",
+      "sha256": "744bcaf782c6c2dbb393cb89a79577cb321cbd8598ad4b37a9bf438f1867e346",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNMageTower.dds"
+    },
+    "game-3ef40aca8bb38b5f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNWisp.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3ef40aca8bb38b5f.dds",
+      "sha256": "f629e5894b6ed07c45dd076a45c20f0561219cef37959363a3e5d7ca4c2630f4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNWisp.dds"
+    },
+    "map-2ad678a8043ef28b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNalchemical_electro_pawn.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\2ad678a8043ef28b.blp",
+      "sha256": "9cec8be85229ad31d05120645551990037a3448b3f0017159a49a9696093049a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-c542524c21522bf3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNled_by_the_novis.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\c542524c21522bf3.blp",
+      "sha256": "92dbdfc6aa52e9ee0d03b62ef5fd2e527f0be032f02aec0e439b09cb7ba84b4a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-43621a056d22053c.png": {
+      "mapIconPath": "ReplaceableTextures\\PassiveButtons\\PASBTNStormHammer.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\43621a056d22053c.dds",
+      "sha256": "0357f8ad2f803d176169f0ae83f0e99926a5ea3f80f2fed7a71771616ceacd1f",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\PassiveButtons\\PASBTNStormHammer.dds"
+    },
+    "map-53d739cf8431d66d.png": {
+      "mapIconPath": "BTNPurplePotion.BLP",
+      "sourceFile": "newGUI\\source\\recovered-textures\\53d739cf8431d66d.blp",
+      "sha256": "12f711b5e2461b72d7a6e80302b30f17c899695e70dd970f83eef8414da33424",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-51ed8263b8785d67.png": {
+      "mapIconPath": "BTNPoisonPotion.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\51ed8263b8785d67.blp",
+      "sha256": "5ba55ea3ea1c29eaf1b70f5992ac7fd692a532147371fbb16d64f1d39974308a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-d180cf44d53e6b25.png": {
+      "mapIconPath": "BTNManaPotion.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\d180cf44d53e6b25.blp",
+      "sha256": "84af4bc5c402cf6b3130f9e13d1d3c62c71c40dfc1c6c94a62bf7d107b66306b",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-36e7a5877b01112e.png": {
+      "mapIconPath": "BTNHEALTH VIAL.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\36e7a5877b01112e.blp",
+      "sha256": "1a1262080cb5b65386b976be6f68814757a8a651d6ff6744ec7e42e700b8c57a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-25177266514ffcb2.png": {
+      "mapIconPath": "BTNANTIDOTE VIAL.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\25177266514ffcb2.blp",
+      "sha256": "d6f3d5ead17132f6740dcf20cc22a5ac997cc739231ddd5322fe5db1296fff1e",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-0d7949f377fcfedd.png": {
+      "mapIconPath": "BTNMANA VIAL.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0d7949f377fcfedd.blp",
+      "sha256": "31bb0ad899d918d228ca8b42a070445306f955445e29110c99ef2dbe84a493d3",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-0268a98c71cfb325.png": {
+      "mapIconPath": "BTNINV_Potion_18.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0268a98c71cfb325.blp",
+      "sha256": "48d808fb42789a4ff390d0ca2d164f19351c704d8c1da61408f1f65f4532e90a",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-05f1e1fe1bf5c7b3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRingOfDeath.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\05f1e1fe1bf5c7b3.blp",
+      "sha256": "b06890b5f4dfbcf6e35c8ebe2f84de2b81addb6165b620f648c2bb7699e2a036",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-c075b311ba959b7c.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCloak.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\c075b311ba959b7c.dds",
+      "sha256": "2730016ebcc50f63b4075300711ec2676c0cf3e5f95c21cda9cf79535b16f808",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCloak.dds"
+    },
+    "map-b2b8289b8772e737.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNAmuletOfDeath.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\b2b8289b8772e737.blp",
+      "sha256": "decc6afa1d6f582e4110a7220d875c7739b37c546fdd6619b2cc6d0a4d876fd2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-30fe45f375e8b6e6.png": {
+      "mapIconPath": "BTNScythe.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\30fe45f375e8b6e6.blp",
+      "sha256": "470a2eebe0b61572710e1824e01985d5e2abaab4129cea605f2c380d70eaf840",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-c69514774927b09e.png": {
+      "mapIconPath": "BTNPoisonDagger.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\c69514774927b09e.blp",
+      "sha256": "ba4c9942cc253d998ce0dabe26a88ddd42ede06f36f9cc44da045c3ea116f4f9",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-6dfad1d238a1dfe9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNSkeletonArcher.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\6dfad1d238a1dfe9.dds",
+      "sha256": "dd00cfc4b9b6908fbdd5c55ed51bea4642eae53f8d8075f54474cbaf7c123183",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNSkeletonArcher.dds"
+    },
+    "map-561c69881ade831b.png": {
+      "mapIconPath": "BTNRobeOfDeath.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\561c69881ade831b.blp",
+      "sha256": "4a37d7b02daa038ffe4a2a917830e727bb2b7a3f7372a40b50f1fc795677ff8f",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-3414aa8158cf57e3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathAndDecay.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\3414aa8158cf57e3.dds",
+      "sha256": "dd96a2e19e6412dedcf1db51af14a4ce6901659b001a16707dd2c39aa809f80b",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDeathAndDecay.dds"
+    },
+    "game-aa184519491ab451.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNCurse.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\aa184519491ab451.dds",
+      "sha256": "c28c23e4da30bfe22e98bfc4ea711d219075e55a15efd4301906d8c580b1e3b1",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNCurse.dds"
+    },
+    "map-0d6e6e46291817b3.png": {
+      "mapIconPath": "BTNFireMastery.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\0d6e6e46291817b3.blp",
+      "sha256": "c8993523c94ba0dfcdf49b25e3d68564e6495696052bc815055eb20ce88d75e2",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-7b8ea954627bea20.png": {
+      "mapIconPath": "BTNRegeneration.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\7b8ea954627bea20.blp",
+      "sha256": "4f1e044635b5366f2915eb7a1213b59d59422b0087d35515bcc46b201d091e29",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-f16408b1dc6a734b.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNTempleOfTheDamned.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\f16408b1dc6a734b.dds",
+      "sha256": "2798ce6f6bb35c19f35a9d1fd11284c6dd75ac06fd21d1df0e77e5f494a4aff8",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNTempleOfTheDamned.dds"
+    },
+    "game-5825154729cdf860.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathCoil.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\5825154729cdf860.dds",
+      "sha256": "62d925d6840ac5febbf4994d8cb83f5db51a5a2c51410375a2d59f5c2d898ecc",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNDeathCoil.dds"
+    },
+    "game-6c2f77fcbc2379f3.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNBrilliance.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\6c2f77fcbc2379f3.dds",
+      "sha256": "3cda1b1c1c59045241a3825c6077ee70504429a2f5f19d63e271c6a4e7dd38a4",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNBrilliance.dds"
+    },
+    "game-391ba6ccbb69a57f.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNRegenerate.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\391ba6ccbb69a57f.dds",
+      "sha256": "4184460dad2ac8f7e7e213319fb132359af34149f485ebbf503c2248019528fc",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNRegenerate.dds"
+    },
+    "game-8bd499fca3b5f994.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\8bd499fca3b5f994.dds",
+      "sha256": "94f541f56d8629c4a7ad93fa876f325263f8d11672b7b8354b2f29fb60cceea7",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNIceShard.dds"
+    },
+    "map-6e73618cec4c8666.png": {
+      "mapIconPath": "BTNIceBlade.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\6e73618cec4c8666.blp",
+      "sha256": "c2a84b31b44156504409080673f0053c3b60d0d367a944fcaaa3ede957286160",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-040144b45d9b7322.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\040144b45d9b7322.dds",
+      "sha256": "a75c3da9a597920574c01c5061820e0752a796c817cb9f348f69c3a1bcebe7e6",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNIceCrownObelisk.dds"
+    },
+    "game-920f8270f9c663a4.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNZiggurat.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\920f8270f9c663a4.dds",
+      "sha256": "f598dd0721b19f243c1b26ade4fd4b70e674e9871655da113080c7669bbf8f4a",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNZiggurat.dds"
+    },
+    "map-cf75252f667a3094.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNstorm_killer.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\cf75252f667a3094.blp",
+      "sha256": "3c9fd138abd93b708036bb40b6cce8a6f1736acb92df7f390b7ebb7367ea61db",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "game-426e60ba5a36690a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNPowerGenerator.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\426e60ba5a36690a.dds",
+      "sha256": "db929f569bd2aaac6a7b840c07abf015769e7592253cdf04b67fc7bea248d772",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\CommandButtons\\BTNPowerGenerator.dds"
+    },
+    "game-99f0235f992c1a96.png": {
+      "mapIconPath": "ReplaceableTextures\\PassiveButtons\\PASBTNFrost.blp",
+      "sourceFile": "newGUI\\source\\game-textures\\99f0235f992c1a96.dds",
+      "sha256": "d5164c814cf7854212c73b8f03444b2c99cb2d028fa3d9c8037f1f1ab1efe8fa",
+      "kind": "game",
+      "gamePath": "war3.w3mod:ReplaceableTextures\\PassiveButtons\\PASBTNFrost.dds"
+    },
+    "map-461e465a659834f9.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueRing.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\461e465a659834f9.blp",
+      "sha256": "603226c3a47b1796dccd1be0c68377a72f12f8d5cd47f8bbad43198e8d93f2b7",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-34e98773ffa40664.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueHood.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\34e98773ffa40664.blp",
+      "sha256": "18e072b93e1b11beab526b2b6bc751fb434bcd82018f4fa181a9f019da79f5e8",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-a650fa74cb5e593a.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueCloak.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\a650fa74cb5e593a.blp",
+      "sha256": "d7a60971c8d12d475700b140de77cce0e328266ed08bbd606c76c6a4f913b9e4",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-c2a867f73af83747.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueScythe.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\c2a867f73af83747.blp",
+      "sha256": "1dbbb839c674d2b537a2f83cfb541cef24baa9e50721d3e5907b3e427a614f14",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-51cb919beafd9a98.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueWingLeft.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\51cb919beafd9a98.blp",
+      "sha256": "8b00de76cb926ef3a907b98cd5420497c86dee5ece49b62754c341a33e13768f",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-cd2bb98683d5822e.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueWingRight.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\cd2bb98683d5822e.blp",
+      "sha256": "2c5ea8efd059de512aac854c837a83a6f983c54e67b062f58b89ae9e8a630b65",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    },
+    "map-bb9d8532c595ac98.png": {
+      "mapIconPath": "ReplaceableTextures\\CommandButtons\\BTNDeathTrueSet.blp",
+      "sourceFile": "newGUI\\source\\recovered-textures\\bb9d8532c595ac98.blp",
+      "sha256": "6e3b1e0a1177584d434ada5db247d2bf87421c25ed2bc59e6dcb94dc7dfd7348",
+      "kind": "map",
+      "archive": "80340_GoblinSurvival_v1.5.5fix15.w3x"
+    }
+  },
+  "sourceHashes": {
+    "War3map.w3t": "19458a398bd81c4a9fd42a646eaf9ed0596cd530692eeaf5ab4759276ec49728",
+    "War3map.wts": "067365eb9936749e21beb1768d5a9cf43e2a73f78e939c19ff7213e3fcedf93b",
+    "Scripts/war3map.j": "d1fff228ddaf223ef6189c9c284489c40300d69a00999600854fe61a49b8f2dd"
+  }
+}
