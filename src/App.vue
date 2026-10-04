@@ -34,6 +34,7 @@ function openItem(item) {
   selectedItem.value = item
 }
 function closeRecipe() { selectedItem.value = null }
+function resetRecipeScroll() { if (recipePane.value) recipePane.value.scrollTop = 0 }
 function onRecipeBackdrop(event) {
   if (!isCompact.value || event.target !== event.currentTarget) return
   const bounds = event.currentTarget.getBoundingClientRect()
@@ -42,7 +43,7 @@ function onRecipeBackdrop(event) {
 watch([selectedItem, isCompact], () => {
   const pane = recipePane.value
   if (!isCompact.value || !pane) return
-  if (selectedItem.value) { if (!pane.open) pane.showModal(); pane.scrollTop = 0 }
+  if (selectedItem.value) { if (!pane.open) pane.showModal() }
   else if (pane.open) pane.close()
 }, { flush: 'post' })
 const groupItems = computed(() => directCatalog.value ? filterItems(items, { category: category.value, favorites: favorites.value }) : !selectedGroup.value ? [] : selectedGroup.value.itemIds ? selectedGroup.value.itemIds.map(id => byId.get(id)).filter(Boolean) : category.value === 'craft' ? items.filter(item => forgeFor(item) === selectedGroup.value.id) : classItemsFor(items, selectedGroup.value.name))
@@ -132,6 +133,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
               </div>
               <component :is="isCompact ? 'dialog' : 'aside'" ref="recipePane" data-od-id="recipe-pane" class="recipe-pane" aria-label="Рецепт предмета" tabindex="-1" @click="onRecipeBackdrop" @cancel.prevent="closeRecipe">
                 <button v-if="isCompact && selectedItem" class="recipe-close" aria-label="Закрыть рецепт" @click="closeRecipe"><Icon name="close" /></button>
+                <Transition name="recipe-content" mode="out-in" @before-enter="resetRecipeScroll">
                 <div v-if="selectedItem" class="recipe-body" :key="selectedItem.id">
                   <div class="recipe-heading"><img :src="iconFor(selectedItem)" alt="" /><div><h2 data-od-id="recipe-title">{{ selectedItem.name }}</h2><span v-if="selectedItem.level">{{ selectedItem.level }} уровень</span><p v-if="selectedItem.classes.length">{{ selectedItem.classes.join(' · ') }}</p></div></div>
                   <p class="recipe-description">{{ selectedItem.description || 'Характеристики не указаны.' }}</p>
@@ -140,6 +142,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); compactViewpor
                   <section data-od-id="recipe-used-in"><h3>Используется в</h3><button v-for="item in usedIn" :key="item.id" class="ingredient" @click="openItem(item)"><img :src="iconFor(item)" alt="" /><span>{{ item.name }}<small>Нужно: {{ item.ingredients.filter(part => part.itemId === selectedItem.id).reduce((sum, part) => sum + part.count, 0) }} шт.</small></span><Icon name="arrow" /></button><p v-if="!usedIn.length" class="inline-note">Следующие крафты не найдены.</p></section>
                 </div>
                 <div v-else class="recipe-placeholder"><Icon name="hammer" /><h3>Рецепт предмета</h3><p>Выбери предмет — здесь появятся его характеристики, ингредиенты и следующие крафты.</p></div>
+                </Transition>
               </component>
               </div>
             </div>
